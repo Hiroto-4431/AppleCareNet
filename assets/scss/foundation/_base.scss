@@ -1,0 +1,48 @@
+/* ===============================================
+# 全ページ共通のスタイルを記述するファイル
+=============================================== */
+html {
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  overflow: hidden;
+}
+
+// .lg-only {
+//   display: block;
+//   @include md {
+//     display: none;
+//   }
+// }
+
+// .md-only {
+//   display: none;
+//   @include md {
+//     display: block;
+//   }
+//   @include sp {
+//     display: none;
+//   }
+// }
+// .md-over {
+//   display: block;
+//   @include sp {
+//     display: none;
+//   }
+// }
+// .sp-only {
+//   display: none;
+//   @include sp {
+//     display: block;
+//   }
+// }
+
+// .md-under {
+//   display: none;
+//   @include md {
+//     display: block;
+//   }
+// }
