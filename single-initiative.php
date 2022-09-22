@@ -10,12 +10,10 @@
   </section>
   <section class="l-content">
     <div class="l-content__img">
-
-      <!-- <img src="./assets/img/common/pc-initiative01.png" alt=""> -->
       <picture>
         <source srcset="./assets/img/common/pc-initiative01.png" media="(min-width: 960px)" />
         <source srcset="./assets/img/common/sp-initiative01.png" media="(max-width: 960px)" />
-        <img src="./assets/img/common/pc-initiative01.png" alt="aaa" />
+        <img src="./assets/img/common/pc-initiative01.png" alt="" />
       </picture>
     </div>
     <div class="l-content__title">
