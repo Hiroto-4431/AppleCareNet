@@ -1,19 +1,19 @@
-<!-- ===== 栄養管理士[詳細] ===== -->
+<!-- ===== 栄養レシピ[詳細] ===== -->
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
-<main class="l-main l-single-registeredDietitian">
+<main class="l-main l-single-nutritionRecipe">
   <section class="l-top">
     <div class="l-top__main-text">
-      <h1 class="c-text__common__main-title">栄養管理士の導入</h1>
-      <p class="c-text__common__sub-title">OUR NUTRITIONIST</p>
+      <h1 class="c-text__common__main-title">栄養レシピ</h1>
+      <p class="c-text__common__sub-title">RECIPE</p>
     </div>
   </section>
   <section class="l-content">
     <div class="l-content__img">
       <picture>
-        <source srcset="./assets/img/common/pc-registeredDietitian01.png" media="(min-width: 960px)" />
-        <source srcset="./assets/img/common/sp-registeredDietitian01.png" media="(max-width: 960px)" />
-        <img src="./assets/img/common/pc-registeredDietitian01.png" alt="" />
+        <source srcset="./assets/img/common/pc-nutritionRecipe01.png" media="(min-width: 960px)" />
+        <source srcset="./assets/img/common/sp-nutritionRecipe01.png" media="(max-width: 960px)" />
+        <img src="./assets/img/common/pc-nutritionRecipe01.png" alt="" />
       </picture>
     </div>
     <div class="l-content__title">
