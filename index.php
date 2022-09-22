@@ -1,4 +1,6 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
-<main id="index"></main>
+<main class="l-main">
+
+</main>
 <?php include('./footer.php'); ?>

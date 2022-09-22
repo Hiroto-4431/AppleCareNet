@@ -2,3 +2,18 @@
 # 微調整用のクラスなどを定義するファイル
   唯一 !important の使用ができる
 =============================================== */
+.f-space {
+  &__footer {
+    &__list {
+      margin-right: 2.35rem;
+    }
+  }
+}
+.f-gap {
+  &__footer {
+    &__list {
+      display: grid;
+      row-gap: 3rem !important;
+    }
+  }
+}
