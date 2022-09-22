@@ -1,3 +1,4 @@
+@use "../foundation/variables" as *;
 /* ===============================================
 # 全ページ共通のスタイルを記述するファイル
 =============================================== */
@@ -11,38 +12,37 @@ img {
   overflow: hidden;
 }
 
-// .lg-only {
-//   display: block;
-//   @include md {
-//     display: none;
-//   }
-// }
+.lg-only {
+  display: block;
+  @include md {
+    display: none;
+  }
+}
 
-// .md-only {
-//   display: none;
-//   @include md {
-//     display: block;
-//   }
-//   @include sp {
-//     display: none;
-//   }
-// }
-// .md-over {
-//   display: block;
-//   @include sp {
-//     display: none;
-//   }
-// }
-// .sp-only {
-//   display: none;
-//   @include sp {
-//     display: block;
-//   }
-// }
-
-// .md-under {
-//   display: none;
-//   @include md {
-//     display: block;
-//   }
-// }
+.md-only {
+  display: none;
+  @include md {
+    display: block;
+  }
+  @include sp {
+    display: none;
+  }
+}
+.md-over {
+  display: block;
+  @include sp {
+    display: none;
+  }
+}
+.sp-only {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}
+.md-under {
+  display: none;
+  @include md {
+    display: block;
+  }
+}
