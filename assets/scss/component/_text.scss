@@ -119,4 +119,105 @@
       letter-spacing: 0.01em;
     }
   }
+  &__footer {
+    &__contact {
+      &--main {
+        // font-family: ; // add
+        font-size: 2.4rem;
+        font-weight: bold;
+        line-height: calc(71 / 24);
+        letter-spacing: 0.05em;
+        color: #fff;
+        @include md {
+          font-size: 2.6rem;
+          line-height: calc(89 / 26);
+        }
+      }
+      &--sub {
+        font-family: "Montserrat", sans-serif;
+        font-size: 1.6rem;
+        font-weight: medium;
+        line-height: calc(30 / 16);
+        letter-spacing: 0.2em;
+        color: #fff;
+      }
+      &--date {
+        // font-family: ; // add
+        font-size: 1.2rem;
+        font-weight: medium;
+        color: #fff;
+        @include md {
+          font-size: 1.6rem;
+        }
+      }
+      &--tel {
+        // font-family: TT Norms; // add
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #fff;
+        @include md {
+          font-size: 3.5rem;
+        }
+      }
+      &--mail {
+        // font-family: ; // add
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: calc(44 / 18);
+        color: #fff;
+
+        @include md {
+          font-size: 2.3rem;
+          line-height: calc(30 / 23);
+        }
+      }
+    }
+    &__address {
+      font-family: $NotoSans;
+      font-size: 1.4rem;
+      font-weight: medium;
+      line-height: calc(25 / 14);
+      letter-spacing: 0.05em;
+      color: #000;
+    }
+    &__map {
+      // font-family: Montserrat;
+      font-size: 1.6rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      color: #fff;
+    }
+    &__link {
+      &--head {
+        // font-family: ; // add
+        font-size: 2rem;
+        font-weight: bold;
+        color: #000;
+        letter-spacing: 0.1em;
+      }
+      &--strong {
+        // font-family: ; // add
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: #000;
+        letter-spacing: 0.1em;
+      }
+      &--list {
+        // font-family: ; // add
+        font-size: 1.6rem;
+        font-weight: medium;
+        color: #bfbfbf;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+      }
+    }
+
+    &__copyright {
+      // font-family: ; // add
+      font-size: 1.4rem;
+      font-weight: medium;
+      color: #000;
+      letter-spacing: 0.005em;
+    }
+  }
 }

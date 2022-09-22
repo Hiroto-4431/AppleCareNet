@@ -6,6 +6,12 @@ html {
   font-size: 10px;
 }
 
+.l-main {
+  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+  border: 0.5rem solid #000;
+}
+
 img {
   max-width: 100%;
   vertical-align: bottom;

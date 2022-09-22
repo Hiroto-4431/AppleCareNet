@@ -1,2 +1,153 @@
-// @use "../foundation/variables";
 @use "../foundation/variables" as *;
+
+.l-footer {
+  min-height: 10rem;
+  position: relative;
+  &__content {
+    width: 100%;
+    height: 100%;
+  }
+  &__label {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+  }
+  &__contact {
+    background: $red;
+    width: 100%;
+    height: 56.4rem;
+    position: relative;
+    &__mark {
+      width: 14.23rem;
+      height: auto;
+      position: absolute;
+      top: 5.5%;
+      right: 5.4%;
+      opacity: 0.5;
+    }
+    &__content {
+      margin-top: 14rem;
+      padding-left: 10%;
+    }
+    &__date {
+      margin: 5rem 0 4rem 0;
+      display: flex;
+      align-self: center;
+      img {
+        width: 5.5rem;
+        margin-right: 1.2rem;
+      }
+    }
+    &__mail {
+      display: flex;
+      align-self: center;
+      img {
+        width: 5.5rem;
+        margin-right: 1.2rem;
+      }
+    }
+  }
+  &__recruit {
+    width: 100%;
+    height: 75%;
+    min-height: 50rem;
+    background-image: url("../img/common/footer-recruit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    &__text {
+      display: inline;
+      margin: 0 auto;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &__info {
+    width: 100%;
+    height: 100%;
+  }
+  &__site {
+    &__wrapper {
+      padding: 8.7rem 10%;
+      margin-bottom: 11.7rem;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__logo {
+      width: 36rem;
+      margin-bottom: 3rem;
+    }
+    &__address {
+      margin-bottom: 3.5rem;
+    }
+    &__map {
+      width: 25.2rem;
+      height: 5.8rem;
+      background: $red;
+      &--text {
+        width: 16.3rem;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          width: 1.5rem;
+        }
+      }
+    }
+    &__link {
+      width: 60%;
+      height: 100%;
+    }
+    &__list {
+      display: flex;
+      // justify-content: space-between;
+      &:first-of-type {
+        margin-bottom: 4.2rem;
+      }
+    }
+    &__cell {
+      &:first-of-type {
+        width: 30rem;
+        margin-right: 5rem;
+      }
+      &--flex {
+        display: flex;
+      }
+      &--wrapper {
+        margin-top: 2rem;
+        display: grid;
+        row-gap: 2rem;
+      }
+    }
+    &__copyright {
+      padding: 0 10%;
+      margin-bottom: 9rem;
+    }
+  }
+  &__move {
+    position: absolute;
+    bottom: -4rem;
+    right: 8.5rem;
+    bottom: 0rem;
+    width: 7.5rem;
+    height: 7.5rem;
+    border: 0.2rem solid $red;
+    // &__mark {
+    i {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 4.5rem;
+      color: $red;
+    }
+    // }
+  }
+}
