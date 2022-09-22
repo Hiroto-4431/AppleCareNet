@@ -124,14 +124,13 @@
       // font-family: YU; // add
       font-size: 5rem;
       font-weight: bold;
-      line-height: calc(183 / 50);
       letter-spacing: 0.05em;
       color: #000;
       text-align: center;
       white-space: nowrap;
+      padding-bottom: 3rem;
       @include sp {
         font-size: 3.5rem;
-        line-height: calc(50 / 35);
       }
     }
     &__sub-title {
