@@ -3,6 +3,9 @@
   唯一 !important の使用ができる
 =============================================== */
 .f-space {
+  &__zero {
+    margin: 0 !important;
+  }
   &__footer {
     &__list {
       margin-right: 2.35rem;

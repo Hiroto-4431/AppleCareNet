@@ -33,8 +33,6 @@
         </a>
       </div>
     </div>
-    <div class="l-footer__info"></div>
-
 
     <div class="l-footer__site">
       <div class="l-footer__site__wrapper">
@@ -100,7 +98,7 @@
                 <a class="c-text__footer__link--list" href="#">アクセス</a>
               </div>
             </div>
-            <div class="l-footer__site__cell">
+            <div class="l-footer__site__cell f-space__zero">
               <p class="c-text__footer__link--head">店舗情報</p>
               <div class="l-footer__site__cell--wrapper f-gap__footer__list">
                 <a class="c-text__footer__link--list" href="#">店舗情報一覧</a>

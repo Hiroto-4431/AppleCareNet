@@ -12,12 +12,18 @@
     align-items: flex-end;
     width: 100%;
     height: 100%;
+    @include md {
+      display: block;
+    }
   }
   &__contact {
     background: $red;
     width: 100%;
     height: 56.4rem;
     position: relative;
+    @include md {
+      height: 42.4rem; //本当は38.4rem
+    }
     &__mark {
       width: 14.23rem;
       height: auto;
@@ -25,15 +31,28 @@
       top: 5.5%;
       right: 5.4%;
       opacity: 0.5;
+      @include md {
+        width: 10.84rem;
+        top: 0;
+        right: 0;
+      }
     }
     &__content {
-      margin-top: 14rem;
-      padding-left: 10%;
+      position: absolute;
+      top: 14rem;
+      left: 20%;
+      @include md {
+        top: 6.7rem;
+        left: 5%;
+      }
     }
     &__date {
       margin: 5rem 0 4rem 0;
       display: flex;
       align-self: center;
+      @include md {
+        margin: 3rem 0 4rem 0;
+      }
       img {
         width: 5.5rem;
         margin-right: 1.2rem;
@@ -57,6 +76,9 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    @include md {
+      min-height: 23.1rem;
+    }
     &__text {
       display: inline;
       margin: 0 auto;
@@ -64,11 +86,11 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      @include md {
+        left: 5%;
+        transform: translateY(-50%);
+      }
     }
-  }
-  &__info {
-    width: 100%;
-    height: 100%;
   }
   &__site {
     &__wrapper {
@@ -76,10 +98,21 @@
       margin-bottom: 11.7rem;
       display: flex;
       justify-content: space-between;
+      @include lg {
+        display: block;
+        margin-bottom: 0;
+        padding: 15.5rem 10% 5rem;
+      }
+      @include md {
+        padding: 15.5rem 5% 5rem;
+      }
     }
     &__logo {
       width: 36rem;
       margin-bottom: 3rem;
+      @include md {
+        width: 27.2rem;
+      }
     }
     &__address {
       margin-bottom: 3.5rem;
@@ -88,6 +121,9 @@
       width: 25.2rem;
       height: 5.8rem;
       background: $red;
+      @include lg {
+        margin-bottom: 5rem;
+      }
       &--text {
         width: 16.3rem;
         justify-content: space-between;
@@ -104,18 +140,30 @@
     &__link {
       width: 60%;
       height: 100%;
+      @include lg {
+        width: 100%;
+      }
     }
     &__list {
       display: flex;
       // justify-content: space-between;
       &:first-of-type {
         margin-bottom: 4.2rem;
+        @include md {
+          margin-bottom: auto;
+        }
+      }
+      @media only screen and (max-width: 750px) {
+        display: block;
       }
     }
     &__cell {
       &:first-of-type {
         width: 30rem;
         margin-right: 5rem;
+      }
+      @include md {
+        margin-bottom: 4rem;
       }
       &--flex {
         display: flex;
@@ -129,6 +177,14 @@
     &__copyright {
       padding: 0 10%;
       margin-bottom: 9rem;
+      @include md {
+        margin-bottom: 2.3rem;
+      }
+      p {
+        @include md {
+          text-align: center;
+        }
+      }
     }
   }
   &__move {
@@ -139,7 +195,10 @@
     width: 7.5rem;
     height: 7.5rem;
     border: 0.2rem solid $red;
-    // &__mark {
+    @include md {
+      top: 68.5rem; //本当は64.5rem お問い合わせの高さによって変動
+      right: 5%;
+    }
     i {
       position: absolute;
       top: 50%;
@@ -148,6 +207,5 @@
       font-size: 4.5rem;
       color: $red;
     }
-    // }
   }
 }

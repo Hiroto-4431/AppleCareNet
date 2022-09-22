@@ -345,6 +345,9 @@ th {
 # 微調整用のクラスなどを定義するファイル
   唯一 !important の使用ができる
 =============================================== */
+.f-space__zero {
+  margin: 0 !important;
+}
 .f-space__footer__list {
   margin-right: 2.35rem;
 }
@@ -485,6 +488,7 @@ h1 {
   line-height: 1.875;
   letter-spacing: 0.2em;
   color: #fff;
+  white-space: nowrap;
 }
 .c-text__footer__contact--date {
   font-size: 1.2rem;
@@ -537,6 +541,7 @@ h1 {
   font-weight: bold;
   color: #000;
   letter-spacing: 0.1em;
+  white-space: nowrap;
 }
 .c-text__footer__link--strong {
   font-size: 1.8rem;
@@ -572,11 +577,21 @@ h1 {
   width: 100%;
   height: 100%;
 }
+@media only screen and (max-width: 960px) {
+  .l-footer__label {
+    display: block;
+  }
+}
 .l-footer__contact {
   background: #cf1126;
   width: 100%;
   height: 56.4rem;
   position: relative;
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__contact {
+    height: 42.4rem;
+  }
 }
 .l-footer__contact__mark {
   width: 14.23rem;
@@ -586,14 +601,33 @@ h1 {
   right: 5.4%;
   opacity: 0.5;
 }
+@media only screen and (max-width: 960px) {
+  .l-footer__contact__mark {
+    width: 10.84rem;
+    top: 0;
+    right: 0;
+  }
+}
 .l-footer__contact__content {
-  margin-top: 14rem;
-  padding-left: 10%;
+  position: absolute;
+  top: 14rem;
+  left: 20%;
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__contact__content {
+    top: 6.7rem;
+    left: 5%;
+  }
 }
 .l-footer__contact__date {
   margin: 5rem 0 4rem 0;
   display: flex;
   align-self: center;
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__contact__date {
+    margin: 3rem 0 4rem 0;
+  }
 }
 .l-footer__contact__date img {
   width: 5.5rem;
@@ -617,6 +651,11 @@ h1 {
   background-size: cover;
   position: relative;
 }
+@media only screen and (max-width: 960px) {
+  .l-footer__recruit {
+    min-height: 23.1rem;
+  }
+}
 .l-footer__recruit__text {
   display: inline;
   margin: 0 auto;
@@ -625,9 +664,11 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.l-footer__info {
-  width: 100%;
-  height: 100%;
+@media only screen and (max-width: 960px) {
+  .l-footer__recruit__text {
+    left: 5%;
+    transform: translateY(-50%);
+  }
 }
 .l-footer__site__wrapper {
   padding: 8.7rem 10%;
@@ -635,9 +676,26 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 1150px) {
+  .l-footer__site__wrapper {
+    display: block;
+    margin-bottom: 0;
+    padding: 15.5rem 10% 5rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__site__wrapper {
+    padding: 15.5rem 5% 5rem;
+  }
+}
 .l-footer__site__logo {
   width: 36rem;
   margin-bottom: 3rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__site__logo {
+    width: 27.2rem;
+  }
 }
 .l-footer__site__address {
   margin-bottom: 3.5rem;
@@ -646,6 +704,11 @@ h1 {
   width: 25.2rem;
   height: 5.8rem;
   background: #cf1126;
+}
+@media only screen and (max-width: 1150px) {
+  .l-footer__site__map {
+    margin-bottom: 5rem;
+  }
 }
 .l-footer__site__map--text {
   width: 16.3rem;
@@ -663,15 +726,35 @@ h1 {
   width: 60%;
   height: 100%;
 }
+@media only screen and (max-width: 1150px) {
+  .l-footer__site__link {
+    width: 100%;
+  }
+}
 .l-footer__site__list {
   display: flex;
 }
 .l-footer__site__list:first-of-type {
   margin-bottom: 4.2rem;
 }
+@media only screen and (max-width: 960px) {
+  .l-footer__site__list:first-of-type {
+    margin-bottom: auto;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .l-footer__site__list {
+    display: block;
+  }
+}
 .l-footer__site__cell:first-of-type {
   width: 30rem;
   margin-right: 5rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__site__cell {
+    margin-bottom: 4rem;
+  }
 }
 .l-footer__site__cell--flex {
   display: flex;
@@ -685,6 +768,16 @@ h1 {
   padding: 0 10%;
   margin-bottom: 9rem;
 }
+@media only screen and (max-width: 960px) {
+  .l-footer__site__copyright {
+    margin-bottom: 2.3rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__site__copyright p {
+    text-align: center;
+  }
+}
 .l-footer__move {
   position: absolute;
   bottom: -4rem;
@@ -693,6 +786,12 @@ h1 {
   width: 7.5rem;
   height: 7.5rem;
   border: 0.2rem solid #cf1126;
+}
+@media only screen and (max-width: 960px) {
+  .l-footer__move {
+    top: 68.5rem;
+    right: 5%;
+  }
 }
 .l-footer__move i {
   position: absolute;
