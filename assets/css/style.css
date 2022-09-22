@@ -463,8 +463,24 @@ h1 {
 .l-header.open-header {
   border: 0.4rem solid #fff;
 }
+@media only screen and (max-width: 960px) {
+  .l-header {
+    overflow-y: scroll;
+    padding: 2.8rem 5% 0;
+  }
+  .l-header::-webkit-scrollbar {
+    display: none;
+  }
+}
 .l-header__logo {
   width: 25.3rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-header__logo {
+    position: relative;
+    z-index: 1000;
+    width: 16rem;
+  }
 }
 .l-header__contact {
   position: absolute;
@@ -480,6 +496,11 @@ h1 {
 }
 .l-header__contact.open-contact p {
   color: #cf1126;
+}
+@media only screen and (max-width: 960px) {
+  .l-header__contact {
+    display: none;
+  }
 }
 .l-header__contact__text {
   position: absolute;
@@ -502,6 +523,20 @@ h1 {
   height: 1.2rem;
   z-index: 1000;
 }
+@media only screen and (max-width: 960px) {
+  .l-hmg__btn {
+    width: 9rem;
+    height: 8.5rem;
+    background: #cf1126;
+    top: 0;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .l-hmg__btn.open-btnBack {
+    background: #fff;
+  }
+}
 .l-hmg__btn__content {
   display: block;
   width: 100%;
@@ -514,11 +549,26 @@ h1 {
   flex-flow: column;
   justify-content: space-between;
 }
+@media only screen and (max-width: 960px) {
+  .l-hmg__btn__content--wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 15%;
+  }
+}
 .l-hmg__btn__content--line {
   display: block;
   width: 100%;
   height: 0.2rem;
   background: #000;
+}
+@media only screen and (max-width: 960px) {
+  .l-hmg__btn__content--line {
+    background: #fff;
+  }
 }
 .l-hmg__btn__content--line.open-line:nth-of-type(1) {
   position: absolute;
@@ -527,6 +577,11 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
   transform-origin: center center 0;
+}
+@media only screen and (max-width: 960px) {
+  .l-hmg__btn__content--line.open-line:nth-of-type(1) {
+    background: #cf1126;
+  }
 }
 .l-hmg__btn__content--line.open-line:nth-of-type(2) {
   opacity: 0;
@@ -538,4 +593,9 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   transform-origin: center center 0;
+}
+@media only screen and (max-width: 960px) {
+  .l-hmg__btn__content--line.open-line:nth-of-type(3) {
+    background: #cf1126;
+  }
 }/*# sourceMappingURL=style.css.map */
