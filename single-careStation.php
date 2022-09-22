@@ -1,19 +1,19 @@
-<!-- ===== 栄養レシピ[詳細] ===== -->
+<!-- ===== 認定栄養ケア・ステーション[詳細] ===== -->
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
-<main class="l-main l-single-nutritionRecipe">
+<main class="l-main l-single-careStation">
   <section class="l-top">
     <div class="l-top__main-text">
-      <h1 class="c-text__common__main-title">栄養レシピ</h1>
-      <p class="c-text__common__sub-title">RECIPE</p>
+      <h1 class="c-text__common__main-title">認定栄養<br class="md-under">ケア・ステーション</h1>
+      <p class="c-text__common__sub-title">CARE STATION</p>
     </div>
   </section>
   <section class="l-content">
     <div class="l-content__img">
       <picture>
-        <source srcset="./assets/img/common/pc-nutritionRecipe01.png" media="(min-width: 960px)" />
-        <source srcset="./assets/img/common/sp-nutritionRecipe01.png" media="(max-width: 960px)" />
-        <img src="./assets/img/common/pc-nutritionRecipe01.png" alt="" />
+        <source srcset="./assets/img/common/pc-careStation01.png" media="(min-width: 960px)" />
+        <source srcset="./assets/img/common/sp-careStation01.png" media="(max-width: 960px)" />
+        <img src="./assets/img/common/pc-careStation01.png" alt="" />
       </picture>
     </div>
     <div class="l-content__title">
