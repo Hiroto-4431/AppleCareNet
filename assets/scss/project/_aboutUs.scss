@@ -1,0 +1,304 @@
+@use "../foundation/variables" as *;
+
+.l-aboutUs {
+  .l-top {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    &__main-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__content {
+      margin-top: 10rem;
+      &__list {
+        width: 67.6rem;
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        @include md {
+          width: 25.4rem;
+          justify-content: space-between;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .l-aboutUs {
+    display: flex;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    @include md {
+      padding-top: 0rem;
+      padding-bottom: 6rem;
+      margin-top: 0;
+      flex-flow: column-reverse;
+    }
+    &__message {
+      padding: 9% 5% 2.5% 10%;
+      width: 48%;
+      height: auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      @include lg {
+        padding: 5% 3% 2.5% 10%;
+      }
+      @include md {
+        padding: 0 5%;
+        width: 100%;
+      }
+      &__title {
+        @include md {
+          margin-bottom: 5.6rem;
+        }
+      }
+      &__sub-title {
+        margin-left: 2rem;
+        @include md {
+          margin-left: 0;
+        }
+      }
+      &__middle-title {
+        @include md {
+          margin-bottom: 5.2rem;
+        }
+      }
+    }
+    &__img {
+      width: 52%;
+      @include md {
+        width: 100%;
+        margin-bottom: 3rem;
+      }
+      picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  .l-greeting {
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    @include md {
+      padding-top: 6rem;
+      padding-bottom: 12rem;
+    }
+    &__label {
+      display: flex;
+      margin-bottom: 5rem;
+      @include md {
+        display: block;
+      }
+    }
+    &__img {
+      width: 43%;
+      @include md {
+        width: 100%;
+        margin-bottom: 5rem;
+      }
+    }
+    &__message {
+      padding: 12% 10% 13% 5.5%;
+      width: 57%;
+      height: auto;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-between;
+      @include md {
+        width: 100%;
+        padding: 0 5%;
+      }
+      &__title {
+      //   padding-bottom :8.6rem;
+      @include md {
+        margin-bottom: 5.6rem;
+      }
+      }
+      // &__middle-title {
+      //   padding-bottom: 8.2rem;
+      // }
+      &__sub-title {
+        margin-left: 2rem;
+        @include md {
+          margin-left: 0;
+        }
+      }
+    }
+    &__content {
+      padding: 0 10%;
+      @include md {
+        padding: 0 5%;
+      }
+      &__text {
+        margin-bottom: 4rem;
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .l-direction {
+    margin-left: 5%;
+    background: #F7F7F7;
+    &__content {  
+      width: 75%;
+      margin: 0 auto;
+      padding: 5rem 0;
+      @include md {
+        margin: 0 5% 0 auto;
+      }
+      &__cell {
+        padding: 5rem 0 5.8rem;
+        border-bottom: 0.1rem solid #959595;
+        &:first-of-type {
+          border-top: 0.1rem solid #959595;
+        }
+        @include md {
+          padding: 3rem 0 3rem;
+        }
+      }
+      &__title {
+        margin-bottom: 5rem;
+        @include md {
+          margin-bottom: 3rem;
+        }
+      }
+      &__sub-title {
+       margin-left: 2rem; 
+       @include md {
+        margin-left: 0rem;
+       }
+      }
+      &__message {
+        &--line {
+          @include md {
+            padding-bottom: 5rem;
+            &:last-of-type {
+              padding-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  .l-companyInfo {
+    padding-top: 20rem;
+    padding-bottom: 10rem;
+    @include md {
+      padding-top: 12rem;
+      padding-bottom: 6rem;
+    }
+    &__title {
+      text-align: center;
+      &__main {
+        padding-bottom: 2rem;
+        @include md {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    &__table {
+      width: 76rem;
+      margin: 5rem auto 0;
+      @include md {
+        width: 33.5rem;
+      }
+      &__cell {
+        border-bottom: 0.1rem solid #959595;
+        &:first-of-type {
+          border-top: 0.1rem solid #959595;
+        }
+      }
+      &__title {
+        width: 43%;
+        @include md {
+          padding-bottom: 2rem;
+        }
+      }
+      &__content {
+        display: flex;
+        align-items: center;
+        padding: 5rem 0;
+        @include md {
+          padding: 3rem 0;
+          display: block;
+        }
+      }
+      &__map {
+        padding-bottom: 5rem;
+        iframe {
+          width: 100%;
+          height: 40rem;
+          @include md {
+            height: 20rem;
+          }
+        }
+      }
+    }
+  }
+  .l-group {
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+    @include md {
+      padding-top: 6rem;
+      padding-bottom: 12rem;
+    }
+    &__title {
+      text-align: center;
+      &__main {
+        padding-bottom: 2rem;
+        @include md {
+          padding-bottom: 1rem;
+        }
+      }
+    }
+    &__table {
+      width: 76rem;
+      margin: 5rem auto 0;
+      @include md {
+        width: 33.5rem;
+      }
+      &__cell {
+        display: flex;
+        align-items: baseline;
+        padding: 5rem 0;
+        border-bottom: 0.1rem solid #959595;
+        &:first-of-type {
+          border-top: 0.1rem solid #959595;
+        }
+        @include md {
+          display: block;
+          padding: 3rem 0;
+        }
+      }
+      &__title {
+        width: 43%;
+        @include md {
+          width:100%;
+          padding-bottom: 2rem;
+        }
+      }
+      &__content {
+        width: 57%;
+        @include md {
+          width: 100%;
+        }
+      }
+      &__map {
+        padding-bottom: 5rem;
+        iframe {
+          width: 100%;
+          height: 40rem;
+        }
+      }
+    }
+  }
+}

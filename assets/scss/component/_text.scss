@@ -143,6 +143,15 @@
       text-align: center;
       white-space: nowrap;
     }
+    &__content {
+      // font-family: 游ゴシック; // add
+      font-size: 2rem;
+      font-weight: bold;
+      line-height: calc(70 / 20);
+      letter-spacing: 0.05em;
+      color: #000;
+      text-align: center;
+    }
     &__back {
       // font-family: ; // add
       font-size: 1.6rem;
@@ -151,6 +160,28 @@
       letter-spacing: 0.1em;
       color: #fff;
       text-align: center;
+    }
+  }
+  &__table {
+    &__title {
+      // font-family: 游ゴシック; // add
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 0.1em;
+      line-height: calc(31 / 18);
+      color: #000;
+    }
+    &__content {
+      // font-family: 游ゴシック; // add
+      font-size: 1.8rem;
+      font-weight: medium;
+      letter-spacing: 0.1em;
+      line-height: calc(31 / 18);
+      color: #000;
+      @include md {
+        font-size: 1.6rem;
+        line-height: calc(27 / 16);
+      }
     }
   }
   &__single {
@@ -170,6 +201,14 @@
       font-weight: medium;
       letter-spacing: 0.2em;
       color: $red;
+    }
+    &__middle-title {
+      // font-family: NotoSerif; // add
+      font-size: 2.3rem;
+      font-weight: medium;
+      line-height: calc(40 / 23);
+      letter-spacing: 0.1em;
+      color: #000;
     }
     &__post {
       // font-family: monta; // add
