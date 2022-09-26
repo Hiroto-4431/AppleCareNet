@@ -1479,6 +1479,84 @@ h1 {
   }
 }
 
+.l-nutritionist .l-top {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+}
+.l-nutritionist .l-top__main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-nutritionist .l-top__content__list {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 960px) {
+  .l-nutritionist .l-top__content__list {
+    width: 25.4rem;
+    margin: 0 auto 4rem;
+    vertical-align: middle;
+  }
+}
+.l-nutritionist .l-content {
+  padding: 20rem 0 20rem;
+}
+.l-nutritionist .l-content__wrapper {
+  position: relative;
+  margin-left: 5%;
+}
+.l-nutritionist .l-content__wrapper__back {
+  position: absolute;
+  top: 25rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #F7F7F7;
+  z-index: -1;
+}
+@media only screen and (max-width: 960px) {
+  .l-nutritionist .l-content__wrapper__back {
+    top: 10rem;
+  }
+}
+.l-nutritionist .l-content__wrapper__line {
+  padding: 0 10% 10rem 5%;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 520px) {
+  .l-nutritionist .l-content__wrapper__line {
+    display: block;
+    padding: 0 0 0 5%;
+  }
+}
+.l-nutritionist .l-content__cell {
+  max-width: 48.8rem;
+  width: 45%;
+}
+@media only screen and (max-width: 520px) {
+  .l-nutritionist .l-content__cell {
+    width: 32.5rem;
+    margin: 0 0 5rem auto;
+  }
+}
+.l-nutritionist .l-content__cell__main-title {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+.l-nutritionist .l-content__cell__sub-title {
+  padding-bottom: 5rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-nutritionist .l-content__cell__sub-title {
+    padding-bottom: 3rem;
+  }
+}
+
 .l-single-initiative .l-top {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
