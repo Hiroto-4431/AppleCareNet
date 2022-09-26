@@ -151,6 +151,9 @@
       letter-spacing: 0.05em;
       color: #000;
       text-align: center;
+      @include md {
+        line-height: 1;
+      }
     }
     &__back {
       // font-family: ; // add
