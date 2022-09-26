@@ -1,0 +1,75 @@
+@use "../foundation/variables" as *;
+
+.l-attempt {
+  .l-top {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    &__main-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__content {
+      &__list {
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        
+        @include md {
+          width: 25.4rem;
+          margin: 0 auto 4rem;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+  .l-content {
+    padding: 20rem 0 20rem;
+    &__wrapper {
+      position: relative;
+      margin-left: 5%;
+      &__back {
+        position: absolute;
+        top: 25rem;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #F7F7F7;
+        z-index: -1;
+        @include md {
+          top: 10rem;
+        }
+      }
+      &__line {
+        padding: 0 10% 10rem 5%;
+        display: flex;
+        justify-content: space-between;
+        @include sp {
+          display: block;
+          padding: 0 0 0 5%;
+        }
+        
+      }
+    }
+    &__cell {
+      max-width: 48.8rem;
+      width: 45%;
+      @include sp {
+        width: 32.5rem;
+        margin: 0 0 5rem auto;
+      }
+      &__main-title {
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+      }
+      &__sub-title {
+        padding-bottom: 5rem;
+        @include md {
+padding-bottom: 3rem;
+        }
+      }
+    }
+  }
+}
