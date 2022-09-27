@@ -110,7 +110,7 @@
     &__logo {
       width: 36rem;
       margin-bottom: 3rem;
-      @include md {
+      @include lg {
         width: 27.2rem;
       }
     }
