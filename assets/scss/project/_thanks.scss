@@ -1,0 +1,30 @@
+@use "../foundation/variables" as *;
+
+.l-aboutUs {
+  .l-top {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    position: relative;
+    &__main-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    &__content {
+      margin-top: 10rem;
+      &__list {
+        width: 67.6rem;
+        display: flex;
+        align-self: center;
+        justify-content: space-around;
+        @include md {
+          width: 25.4rem;
+          justify-content: space-between;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  
+}

@@ -164,6 +164,26 @@
       text-align: center;
     }
   }
+  &__bread {
+    &__white {
+      font-family: $YuGothic;
+      font-size: 1.4rem;
+      font-weight: $medium;
+      line-height: calc(24 / 24);
+      letter-spacing: 0.1em;
+      color: #fff;
+      white-space: nowrap;
+    }
+    &__black {
+      font-family: $YuGothic;
+      font-size: 1.4rem;
+      font-weight: $medium;
+      line-height: calc(24 / 24);
+      letter-spacing: 0.1em;
+      color: #000;
+      white-space: nowrap;
+    }
+  }
   &__table {
     &__title {
       font-family: $YuGothic;
