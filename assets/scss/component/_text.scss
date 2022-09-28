@@ -163,6 +163,30 @@
       color: #fff;
       text-align: center;
     }
+    &__message {
+      font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(36 / 16);
+        color: #000;
+        text-align: center;
+    }
+    &__point {
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $medium;
+      line-height: calc(27 / 16);
+      color: #000;
+      text-align: left;
+    }
+    &__advice {
+      font-family: $YuGothic;
+      font-size: 2rem;
+      font-weight: $bold;
+      // line-height: calc(27 / 16);
+      color: $red;
+      text-align: left;
+    }
   }
   &__bread {
     &__white {
