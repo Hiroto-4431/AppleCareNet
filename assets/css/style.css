@@ -707,6 +707,28 @@ h1 {
   letter-spacing: 0.05em;
   color: #000;
 }
+.c-text__store__name--main {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 2.6923076923;
+  color: #000;
+}
+.c-text__store__name--sub {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.875;
+  color: #cf1126;
+}
+.c-text__store__detail {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 7rem;
+  color: #fff;
+  text-align: center;
+}
 .c-text__form__cell--title {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 1.6rem;
@@ -1728,6 +1750,123 @@ h1 {
   .l-nutritionist .l-content__cell__sub-title {
     padding-bottom: 3rem;
   }
+}
+
+.l-store .l-top {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+}
+.l-store .l-top__main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-store .l-top__content__list {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 960px) {
+  .l-store .l-top__content__list {
+    width: 25.4rem;
+    margin: 0 auto 4rem;
+    vertical-align: middle;
+  }
+}
+.l-store .l-top__title {
+  margin-bottom: 5rem;
+}
+.l-store .l-top__select {
+  position: relative;
+  width: 32.2rem;
+  margin: 0 auto;
+}
+.l-store .l-top__select::after {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  color: var(--sub-color);
+  width: 0;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translateY(-50%);
+}
+.l-store .l-top__select select {
+  border: 0.1rem solid #B4B4B4;
+  border-radius: 0.3rem;
+  box-shadow: 0 0.3rem 0.6rem rgba(1, 180, 180, 0.16);
+  width: 100%;
+  height: 6.3rem;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  padding: 0 2rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.l-store .l-content {
+  padding: 17rem 10% 20rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-store .l-content {
+    padding: 6rem 5% 12rem;
+  }
+}
+.l-store .l-content__all {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 108rem;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 960px) {
+  .l-store .l-content__all {
+    display: block;
+  }
+}
+.l-store .l-content__card {
+  width: 45%;
+  max-width: 50rem;
+  border: 0.1rem solid #000;
+  margin-bottom: 10rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-store .l-content__card {
+    margin: 0 auto 10rem;
+  }
+}
+.l-store .l-content__card__name {
+  padding-bottom: 5rem;
+}
+.l-store .l-content__card__name--sub {
+  text-transform: uppercase;
+}
+.l-store .l-content__card__map {
+  margin-bottom: 2rem;
+}
+.l-store .l-content__card__map iframe {
+  width: 100%;
+  height: 20rem;
+}
+.l-store .l-content__card__link {
+  width: 20rem;
+  height: 7rem;
+  margin: 0 auto;
+  background: #cf1126;
+}
+.l-store .l-content__card__detail {
+  display: block;
 }
 
 .l-single-initiative .l-top {
