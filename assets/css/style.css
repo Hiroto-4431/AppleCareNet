@@ -2209,6 +2209,194 @@ h1 {
   line-height: 1.6666666667;
   text-align: center;
 }
+.l-confirm .l-top {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+}
+.l-confirm .l-top__main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-confirm .l-top__content {
+  margin-top: 10rem;
+}
+.l-confirm .l-top__content__list {
+  width: 67.6rem;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-top__content__list {
+    width: 25.4rem;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+}
+.l-confirm .l-content {
+  margin-top: -14.5rem;
+}
+.l-confirm .l-content__message {
+  margin-bottom: 5rem;
+}
+.l-confirm .l-content__message__require {
+  color: #cf1126;
+}
+.l-confirm .l-content__form {
+  position: relative;
+  width: 66rem;
+  margin: 0 auto 20rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-content__form {
+    width: 33.5rem;
+    margin: 0 auto 12rem;
+  }
+}
+.l-confirm .l-content__form input[type=radio] {
+  display: none;
+}
+.l-confirm .l-content__form input[type=radio]:checked + .l-content__form__checkbox--name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 48%;
+  left: -2.3rem;
+  width: 7px;
+  height: 14px;
+  transform: translateY(-50%) rotate(40deg);
+  border-bottom: 3px solid #cf1126;
+  border-right: 3px solid #cf1126;
+}
+.l-confirm .l-content__form input[type=text],
+.l-confirm .l-content__form textarea {
+  border: 0.1rem solid #B4B4B4;
+  width: 100%;
+}
+.l-confirm .l-content__form input[type=text] {
+  font-size: 1.6rem;
+}
+.l-confirm .l-content__form textarea {
+  padding: 6rem 2rem 2.2rem;
+  min-height: 23rem;
+  font-size: 1.6rem;
+}
+.l-confirm .l-content__form__radio {
+  margin: 0 auto 5rem;
+  width: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-content__form__radio {
+    display: block;
+    width: auto;
+  }
+}
+.l-confirm .l-content__form__radio--cell {
+  display: flex;
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-content__form__radio--cell {
+    justify-content: center;
+    margin-bottom: 3.5rem;
+  }
+}
+.l-confirm .l-content__form__radio--name {
+  position: relative;
+}
+.l-confirm .l-content__form__radio--name::before {
+  content: "";
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 0.1rem solid #000;
+  position: absolute;
+  top: 50%;
+  left: -1rem;
+  transform: translate(-100%, -50%);
+}
+.l-confirm .l-content__form__cell {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.l-confirm .l-content__form__cell--title {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-content__form__cell--title {
+    width: 7.2rem;
+  }
+}
+.l-confirm .l-content__form__cell--title-text {
+  position: absolute;
+  top: 2.2rem;
+  left: 2rem;
+}
+.l-confirm .l-content__form__name {
+  padding: 2.2rem 2rem 2.2rem 14.8rem;
+}
+.l-confirm .l-content__form__email {
+  padding: 2.2rem 2rem 2.2rem 21.8rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-content__form__email {
+    padding: 2.2rem 2rem 2.2rem 14.8rem;
+  }
+}
+.l-confirm .l-content__form__email_confirm {
+  padding: 2.2rem 2rem 2.2rem 28.6rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-confirm .l-content__form__email_confirm {
+    padding: 2.2rem 2rem 2.2rem 14.8rem;
+    height: 10.4rem;
+  }
+}
+.l-confirm .l-content__form__require_mark {
+  color: #cf1126;
+  position: absolute;
+  top: 50%;
+  right: -1rem;
+  transform: translate(100%, -50%);
+}
+.l-confirm .l-content__form__confirm {
+  margin-bottom: 2.3rem;
+}
+.l-confirm .l-content__form__btn {
+  width: 20rem;
+  height: 7rem;
+  background: #cf1126;
+  display: block;
+  margin: 0 auto;
+  color: #fff;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.6666666667;
+  text-align: center;
+}
+.l-confirm .l-content__form__back-btn {
+  width: 20rem;
+  height: 7rem;
+  background: #fff;
+  display: block;
+  margin: 0 auto;
+  color: #000;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 7rem;
+  text-align: center;
+}
+
 .l-aboutUs .l-top {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
