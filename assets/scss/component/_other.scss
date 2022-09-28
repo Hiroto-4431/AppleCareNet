@@ -1,2 +1,76 @@
-// @use "../foundation/variables";
 @use "../foundation/variables" as *;
+.c-bread {
+  &__whole {
+    width: 64rem;
+    margin: 0 auto 20rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include md {
+      width: 33.5rem;
+    }
+  }
+  &__cell {
+    width: 6.5rem;
+    height: 6.5rem;
+    position: relative;
+    &.past__position {
+      background: #B4B4B4;
+    }
+    &.current__position {
+      background: $red;
+    }
+    &.future__position {
+      background: transparent;
+      border: 0.1rem solid $red;
+      width: 5.3rem;
+      height: 5.3rem;
+    }
+  }
+  &__line {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+    width: 20rem;
+    height: 0.1rem;
+    @include md {
+      width: 5.7rem;
+    }
+    &.past__position {
+      background: #B4B4B4;
+    }
+    &.current__position {
+      background: $red;
+    }
+    &.future__position {
+      background: transparent;
+      border: 0.1rem solid $red;
+    }
+  }
+  &__square {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translateY(-40%);
+    width: 0.7rem;
+    height: 0.7rem;
+    &.past__position {
+      background: #B4B4B4;
+    }
+    &.current__position {
+      background: $red;
+    }
+    &.future__position {
+      background: transparent;
+      border: 0.1rem solid $red;
+    }
+  }
+  &__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+}

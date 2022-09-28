@@ -369,6 +369,83 @@ h1 {
   font-size: 10rem;
 }
 
+.c-bread__whole {
+  width: 64rem;
+  margin: 0 auto 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 960px) {
+  .c-bread__whole {
+    width: 33.5rem;
+  }
+}
+.c-bread__cell {
+  width: 6.5rem;
+  height: 6.5rem;
+  position: relative;
+}
+.c-bread__cell.past__position {
+  background: #B4B4B4;
+}
+.c-bread__cell.current__position {
+  background: #cf1126;
+}
+.c-bread__cell.future__position {
+  background: transparent;
+  border: 0.1rem solid #cf1126;
+  width: 5.3rem;
+  height: 5.3rem;
+}
+.c-bread__line {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  width: 20rem;
+  height: 0.1rem;
+}
+@media only screen and (max-width: 960px) {
+  .c-bread__line {
+    width: 5.7rem;
+  }
+}
+.c-bread__line.past__position {
+  background: #B4B4B4;
+}
+.c-bread__line.current__position {
+  background: #cf1126;
+}
+.c-bread__line.future__position {
+  background: transparent;
+  border: 0.1rem solid #cf1126;
+}
+.c-bread__square {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-40%);
+  width: 0.7rem;
+  height: 0.7rem;
+}
+.c-bread__square.past__position {
+  background: #B4B4B4;
+}
+.c-bread__square.current__position {
+  background: #cf1126;
+}
+.c-bread__square.future__position {
+  background: transparent;
+  border: 0.1rem solid #cf1126;
+}
+.c-bread__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .c-text__header__contact--main {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
   font-size: 1.6rem;
@@ -530,6 +607,24 @@ h1 {
   letter-spacing: 0.1em;
   color: #fff;
   text-align: center;
+}
+.c-text__bread__white {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #fff;
+  white-space: nowrap;
+}
+.c-text__bread__black {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  color: #000;
+  white-space: nowrap;
 }
 .c-text__table__title {
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
@@ -1836,4 +1931,32 @@ h1 {
 }
 .l-single-careStation .l-content__back span {
   display: block;
+}
+
+.l-aboutUs .l-top {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+}
+.l-aboutUs .l-top__main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.l-aboutUs .l-top__content {
+  margin-top: 10rem;
+}
+.l-aboutUs .l-top__content__list {
+  width: 67.6rem;
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+}
+@media only screen and (max-width: 960px) {
+  .l-aboutUs .l-top__content__list {
+    width: 25.4rem;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=style.css.map */
