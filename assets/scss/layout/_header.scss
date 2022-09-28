@@ -8,6 +8,7 @@
   padding: 3.6rem 5% 0;
   border: 0.4rem solid #cf1126;
   background: transparent;
+  z-index: -1;
   &.open-header {
     border: 0.4rem solid #fff;
   }

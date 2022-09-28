@@ -265,6 +265,34 @@
       color: #000;
     }
   }
+  &__form {
+    &__cell {
+      &--title {
+        font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(24 / 16);
+        letter-spacing: 0.1em;
+        color: #000;
+      }
+      &--content {
+        font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $bold;
+        line-height: calc(40 / 16);
+        letter-spacing: 0.05em;
+        color: #000;
+      }
+    }
+    &__privacyPolicy {
+      font-family: $NotoSans;
+      font-size: 1.8rem;
+      font-weight: $regular;
+      line-height: calc(30 / 18);
+      color: #000;
+      text-align: center;
+    }
+  }
   &__footer {
     &__contact {
       &--main {
