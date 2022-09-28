@@ -265,6 +265,32 @@
       color: #000;
     }
   }
+  &__store {
+    &__name {
+      &--main {
+        font-family: $YuGothic;
+        font-size: 2.6rem;
+        font-weight: $bold;
+        line-height: calc(70 / 26);
+        color: #000;
+      }
+      &--sub {
+        font-family: $Montserrat;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(30 / 16);
+        color: $red;
+      }
+    }
+    &__detail {
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $bold;
+      line-height: 7rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
   &__form {
     &__cell {
       &--title {
