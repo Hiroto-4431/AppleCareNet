@@ -123,14 +123,19 @@
   </div>
 </footer>
 
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <!-- common js -->
 <script src="./assets/js/common.js"></script>
 <!-- hamburger js -->
 <script src="./assets/js/hamburger.js"></script>
 <!-- smoothScroll js -->
 <script src="./assets/js/smoothScroll.js"></script>
+<!-- swiper js -->
+<script src="./assets/js/swiper.js"></script>
 <!-- bodyScrollLock js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
+
 
 <!--各ページ固有のjsを読み込む-->
 </body>
