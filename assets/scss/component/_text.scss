@@ -230,6 +230,118 @@
       }
     }
   }
+  &__index {
+    &__main-title {
+      font-family: $YuGothic;
+      font-size: 6rem;
+      font-weight: $bold;
+      letter-spacing: 0.05em;
+      color: #000;
+      text-align: center;
+      white-space: nowrap;
+      padding-bottom: 3rem;
+      @include md {
+        font-size: 3.5rem;
+        line-height: calc(50 / 35);
+      }
+    }
+    &__sub-title {
+      font-family: $Montserrat;
+      font-size: 2.5rem;
+      font-weight: $medium;
+      line-height: calc(30 / 23);
+      letter-spacing: 0.2em;
+      color: $red;
+      text-align: center;
+      white-space: nowrap;
+      @include md {
+        font-size: 2rem;
+        line-height: calc(30 / 20);
+      }
+    }
+    &__label {
+      &--title {
+        font-family: $YuGothic;
+        font-size: 4rem;
+        font-weight: $bold;
+        letter-spacing: 0.1em;
+        color: #fff;
+      }
+      &--content {
+        font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(30 / 16);
+        letter-spacing: 0.05em;
+        color: #fff;
+      }
+    }
+    &__news {
+      &--date {
+        font-family: $Montserrat;
+        font-size: 1.6rem;
+        font-weight: $regular;
+        line-height: calc(29 / 16);
+        color: #fff;
+        padding: 3rem 3rem 3rem 0;
+        @include md {
+          display: block;
+          padding: 2rem 0 1rem 0;
+        }
+      }
+      &--post {
+        font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(29 / 16);
+        color: #fff;
+        padding: 3rem 0 3rem;
+        @include md {
+          padding: 0 0 2rem 0;
+        }
+      }
+    }
+    &__article {
+      &--date {
+        font-family: $Montserrat;
+        font-size: 1.8rem;
+        font-weight: $bold;
+        letter-spacing: 0.1em;
+        color: #BFBFBF;
+      }
+      &--headline {
+        font-family: $YuGothic;
+        font-size: 4rem;
+        font-weight: $bold;
+        line-height: calc(70 / 40);
+        letter-spacing: 0.1em;
+        color: #1B1D1E;
+      }
+      &--title {
+        font-family: $YuGothic;
+        font-size: 2.3rem;
+        font-weight: $bold;
+        line-height: calc(70 / 23);
+        letter-spacing: 0.1em;
+        color: #1B1D1E;
+      }
+      &--message {
+        font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(30 / 16);
+        color: #1B1D1E;
+      }
+      &--detail {
+        font-family: $YuGothic;
+        font-size: 1.6rem;
+        font-weight: $medium;
+        line-height: calc(70 / 16);
+        color: $red;
+        transition: all 0.3s;
+      }
+    }
+  }
   &__single {
     &__title {
       font-family: $YuGothic;
@@ -241,12 +353,29 @@
         font-size: 2.3rem;
       }
     }
+    &__title-white {
+      font-family: $YuGothic;
+      font-size: 2.6rem;
+      font-weight: $bold;
+      letter-spacing: 0.05em;
+      color: #fff;
+      @include md {
+        font-size: 2.3rem;
+      }
+    }
     &__sub-title {
       font-family: $Montserrat;
       font-size: 1.6rem;
       font-weight: $medium;
       letter-spacing: 0.2em;
       color: $red;
+    }
+    &__sub-title-white {
+      font-family: $Montserrat;
+      font-size: 1.6rem;
+      font-weight: $medium;
+      letter-spacing: 0.2em;
+      color: #fff;
     }
     &__middle-title {
       font-family: $NotoSans;
@@ -257,12 +386,20 @@
       color: #000;
     }
     &__post {
-      font-family: $Montserrat;
+      font-family: $YuGothic;
       font-size: 1.6rem;
       font-weight: $medium;
       line-height: calc(40 / 16);
       letter-spacing: 0.05em;
       color: #000;
+    }
+    &__post-white {
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $medium;
+      line-height: calc(40 / 16);
+      letter-spacing: 0.05em;
+      color: #fff;
     }
   }
   &__store {

@@ -75,3 +75,133 @@
   }
   
 }
+.c-scrollDown {
+  position: absolute;
+  bottom: 0;
+  left: 3%;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5rem;
+    left:50%;
+    width:1rem;
+    height:1rem;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background:$red;
+    animation:
+    circleMove 1.6s ease-in-out infinite,
+		circleMoveHide 1.6s ease-out infinite;
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+    width:0.1rem;
+    height: 10rem;
+    background:#1A1A1A;
+  }
+  @keyframes circleMove{
+    0% {
+      bottom: 10rem;
+    }
+    100% {
+      bottom: 0rem;
+    }
+  }
+  @keyframes circleMoveHide {
+    0% {
+      opacity: 0
+    }
+    50% { 
+      opacity: 1;
+    }
+    80% { 
+      opacity: 0.9;
+    }
+    100%{ 
+      opacity: 0;
+    }
+}
+  &__text {
+    font-family: $Montserrat;
+    font-size: 1.2rem;
+    font-weight: $medium;
+    letter-spacing: 0.2em;
+    color: #1A1A1A;
+    position: absolute;
+    left: 50%;
+    bottom: 11.75rem;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
+}
+.c-title {
+  &__label {
+    display: flex;
+    align-items: center;
+    @include md {
+      display: block;
+    }
+    &__main {
+      @include md {
+        margin-bottom: 1rem;
+      }
+    }
+    &__sub {
+      margin-left: 2rem;
+      @include md {
+        margin-left: 0rem;
+        margin-bottom: 5rem;
+      }
+      
+    }
+  }
+}
+.c-btn {
+  &__detail {
+    width: 20rem;
+    height: 7rem;
+    background: $red;
+    &__text {
+      display: block;
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $bold;
+      letter-spacing: 0.1em;
+      line-height: 7rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  &__detail-white {
+    width: 20rem;
+    height: 7rem;
+    background: #fff;
+    &__text {
+      display: block;
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $bold;
+      letter-spacing: 0.1em;
+      line-height: 7rem;
+      color: #000;
+      text-align: center;
+    }
+    &__text-red {
+      display: block;
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $bold;
+      letter-spacing: 0.1em;
+      line-height: 7rem;
+      color: $red;
+      text-align: center;
+    }
+  }
+}
