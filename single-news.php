@@ -17,16 +17,16 @@
       <!-- </picture> -->
     </div>
     <div class="l-content__tag">
-      <span class="c-tag l-content__tag__cell">
+      <span class="c-tag">
         <p class="c-tag__text">タグサンプル1</p>
       </span>
-      <span class="c-tag l-content__tag__cell">
+      <span class="c-tag">
         <p class="c-tag__text">タグサンプル1</p>
       </span>
-      <span class="c-tag l-content__tag__cell">
+      <span class="c-tag">
         <p class="c-tag__text">タグサンプル1</p>
       </span>
-      <span class="c-tag l-content__tag__cell">
+      <span class="c-tag">
         <p class="c-tag__text">タグサンプル1</p>
       </span>
     </div>
