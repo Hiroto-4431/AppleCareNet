@@ -207,6 +207,13 @@
 }
 .c-tag {
   display: block;
+  margin: 0 5rem 2rem 0;
+  @include md {
+    margin: 0 3rem 2rem 0;
+  }
+  @include sp {
+    margin: 0 0 2rem 0;
+  }
   &__text {
     padding: 0.7rem 1.7rem;
     background: #90DB1F;

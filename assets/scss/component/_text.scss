@@ -342,6 +342,41 @@
       }
     }
   }
+  &__news {
+    &__tab {
+      font-family: $Montserrat;
+      font-size: 1.6rem;
+      font-weight: $bold;
+      line-height: calc(40 / 16);
+      letter-spacing: 0.05em;
+      color: #1A1A1A;
+    }
+    &__check {
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $medium;
+      line-height: calc(40 / 16);
+      letter-spacing: 0.05em;
+      color: #1A1A1A;
+      padding: 0 0 0 1rem;
+    }
+    &__date {
+      font-family: $Montserrat;
+      font-size: 1.6rem;
+      font-weight: $regular;
+      line-height: calc(30 / 16);
+      color: #1A1A1A;
+     
+    }
+    &__post {
+      font-family: $YuGothic;
+      font-size: 1.6rem;
+      font-weight: $medium;
+      line-height: calc(30 / 16);
+      letter-spacing: 0.05em;
+      color: #1A1A1A;
+    }
+  }
   &__single {
     &__title {
       font-family: $YuGothic;

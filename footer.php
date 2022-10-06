@@ -133,6 +133,8 @@
 <script src="./assets/js/smoothScroll.js"></script>
 <!-- swiper js -->
 <script src="./assets/js/swiper.js"></script>
+<!-- newsTab js -->
+<script src="./assets/js/newsTab.js"></script>
 <!-- bodyScrollLock js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
 
