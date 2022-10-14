@@ -61,31 +61,14 @@ function HMGHandler() {
   });
 
   // 中のリンクを押したときの処理
-  // const links = document.querySelectorAll('.c-text__hmg__content a');
-  // const mail = document.querySelector('.l-hmg__contact__mail');
-  // const recruit = document.querySelector('.l-hmg__recruit');
-
-  // for(let i = 0; i <= links.length; i++) {
-  //   links[i].addEventListener('click', function() {
-  //     clickHandler();
-  //     for(let i = 0; i <= HMGLines.length; i++) {
-  //       HMGLines[i].classList.toggle("open-line");
-  //     }
-  //   });
-  // }
-  // mail.addEventListener('click', function() {
-  //   clickHandler();
-  //   for(let i = 0; i <= HMGLines.length; i++) {
-  //     HMGLines[i].classList.toggle("open-line");
-  //   }
-  // });
-  // recruit.addEventListener('click', function() {
-  //   clickHandler();
-  //   for(let i = 0; i <= HMGLines.length; i++) {
-  //     HMGLines[i].classList.toggle("open-line");
-  //   }
-  // });
-  
-
+  const links = document.querySelectorAll('.l-hmg__content a');
+  for(let i = 0; i <= links.length; i++) {
+    links[i].addEventListener('click', function() {
+      clickHandler();
+      for(let i = 0; i <= HMGLines.length; i++) {
+        HMGLines[i].classList.toggle("open-line");
+      }
+    });
+  }
 }
 document.addEventListener('DOMContentLoaded', HMGHandler());
