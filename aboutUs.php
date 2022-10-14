@@ -2,44 +2,49 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-aboutUs">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__common__main-title">私たちについて</h1>
       <p class="c-text__common__sub-title">ABOUT US</p>
       <div class="l-top__content lg-only">
         <ul class="l-top__content__list">
-          <li class="c-text__common__content"><a href="#">アップルケアネットとは</a></li>
+          <li class="c-text__common__content"><a href="#aboutUs">アップルケアネットとは</a></li>
           <li class="c-text__common__content">/</li>
-          <li class="c-text__common__content"><a href="#">代表メッセージ</a></li>
+          <li class="c-text__common__content"><a href="#greeting">代表メッセージ</a></li>
           <li class="c-text__common__content">/</li>
-          <li class="c-text__common__content"><a href="#">企業理念</a></li>
+          <li class="c-text__common__content"><a href="#corporatePhilosophy">企業理念</a></li>
         </ul>
         <ul class="l-top__content__list">
-          <li class="c-text__common__content"><a href="#">会社概要</a></li>
+          <li class="c-text__common__content"><a href="#companyInfo">会社概要</a></li>
           <li class="c-text__common__content">/</li>
-          <li class="c-text__common__content"><a href="#">グループ会社</a></li>
+          <li class="c-text__common__content"><a href="#corporateGroup">グループ会社</a></li>
           <li class="c-text__common__content">/</li>
           <li class="c-text__common__content"><a href="#">アクセス</a></li>
         </ul>
       </div>
       <div class="l-top__content md-under">
-        <a class="c-text__common__content" href="#">アップルケアネットとは</a>
+        <div class="l-top__content__list">
+          <a class="c-text__common__content" href="#aboutUs">アップルケアネットとは</a>
+        </div>
+
         <ul class="l-top__content__list">
-          <li class="c-text__common__content"><a href="#">代表メッセージ</a></li>
+          <li class="c-text__common__content"><a href="#greeting">代表メッセージ</a></li>
           <li class="c-text__common__content">/</li>
-          <li class="c-text__common__content"><a href="#">企業理念</a></li>
+          <li class="c-text__common__content"><a href="#corporatePhilosophy">企業理念</a></li>
         </ul>
         <ul class="l-top__content__list">
-          <li class="c-text__common__content"><a href="#">会社概要</a></li>
+          <li class="c-text__common__content"><a href="#companyInfo">会社概要</a></li>
           <li class="c-text__common__content">/</li>
-          <li class="c-text__common__content"><a href="#">グループ会社</a></li>
+          <li class="c-text__common__content"><a href="#corporateGroup">グループ会社</a></li>
           <li class="c-text__common__content"></li>
         </ul>
-        <a class="c-text__common__content" href="#">アクセス</a>
+        <div class="l-top__content__list">
+          <a class="c-text__common__content" href="#">アクセス</a>
+        </div>
       </div>
     </div>
   </section>
-  <section class="l-aboutUs">
+  <section class="l-aboutUs" id="aboutUs">
     <div class="l-aboutUs__message">
       <p class="c-text__single__title l-aboutUs__message__title">私たちについて<br class="md-under"><span class="c-text__single__sub-title l-aboutUs__message__sub-title">ABOUT US</span></p>
       <p class="c-text__single__middle-title l-aboutUs__message__middle-title">あなたを見守る、<br>“地元の薬局”を提供します。</p>
@@ -55,7 +60,7 @@
       </picture>
     </div>
   </section>
-  <section class="l-greeting">
+  <section class="l-greeting" id="greeting">
     <div class="l-greeting__label">
       <div class="l-greeting__img">
         <img src="./assets/img/common/aboutUs-greeting.png" alt="">
@@ -75,7 +80,7 @@
       <p class="c-text__single__post l-greeting__content__text">安心して気持ち良く働ける職場があることが、スタッフにとっても患者様にとっても幸福につながるという信念のもと、明日の希望があり、永続する会社にしていきたいと思っています。</p>
     </div>
   </section>
-  <section class="l-direction">
+  <section class="l-direction" id="corporatePhilosophy">
     <div class="l-direction__content">
       <div class="l-direction__content__cell">
         <p class="c-text__single__title l-direction__content__title">社訓<br class="md-under"><span class="c-text__single__sub-title l-direction__content__sub-title">SLOGAN</span></p>
@@ -102,7 +107,7 @@
       </div>
     </div>
   </section>
-  <section class="l-companyInfo">
+  <section class="l-companyInfo" id="companyInfo">
     <div class="l-companyInfo__title">
       <p class="c-text__single__title l-companyInfo__title__main">会社概要</p>
       <p class="c-text__single__sub-title">COMPANY INFO</p>
@@ -133,7 +138,7 @@
           </div>
         </li>
         <li class="l-companyInfo__table__cell">
-          <div class="l-companyInfo__table__content f-align__baseline">
+          <div class="l-companyInfo__table__content l-companyInfo__table__content--align">
             <div class="l-companyInfo__table__title">
               <p class="c-text__table__title">TEL/FAX</p>
             </div>
@@ -176,7 +181,7 @@
       </ul>
     </div>
   </section>
-  <section class="l-group">
+  <section class="l-group" id="corporateGroup">
     <div class="l-group__title">
       <p class="c-text__single__title  l-group__title__main">グループ会社</p>
       <p class="c-text__single__sub-title">CORPORATE GROUP</p>

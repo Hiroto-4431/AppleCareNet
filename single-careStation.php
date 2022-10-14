@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-single-careStation">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__common__main-title">認定栄養<br class="md-under">ケア・ステーション</h1>
       <p class="c-text__common__sub-title">CARE STATION</p>

@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-store">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <div class="l-top__title">
         <h1 class="c-text__common__main-title">店舗情報</h1>
@@ -66,6 +66,20 @@
         </div>
         <div class="l-content__card__map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.8538330387264!2d139.755367151644!3d35.72981313481457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dc5df60da21%3A0x6fced6798fa334a4!2z44Ki44OD44OX44Or5Y2D6aeE5pyo6Kq_5Ymk6Jas5bGA!5e0!3m2!1sja!2sjp!4v1664354376685!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="l-content__card__tag">
+          <span class="c-tag-store">
+            <p class="c-tag-store__text">タグサンプル1</p>
+          </span>
+          <span class="c-tag-store">
+            <p class="c-tag-store__text">タグサンプル1</p>
+          </span>
+          <span class="c-tag-store">
+            <p class="c-tag-store__text">タグサンプル1</p>
+          </span>
+          <span class="c-tag-store">
+            <p class="c-tag-store__text">タグサンプル1</p>
+          </span>
         </div>
         <div class="l-content__card__link">
           <a href="#"><span class="l-content__card__detail c-text__store__detail">詳しく見る</span></a>

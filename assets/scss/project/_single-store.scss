@@ -38,6 +38,13 @@
         }
       }
     }
+    &__tag {
+      margin: 0 auto 5rem auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
+    }
     &__info {
       margin-bottom: 5rem;
       display: flex;
@@ -62,8 +69,21 @@
       width: 70.5rem;
       height: auto;
       margin: 0 auto 5rem;
+      position: relative;
       @include md {
         width: 33.5rem;
+      }
+      &__qr {
+        position: absolute;
+        width: 18rem;
+        height: auto;
+        top: 5rem;
+        right: 5rem;
+        @include md {
+          top: 18.2rem;
+          right: 50%;
+          transform: translateX(50%);
+        }
       }
     }
     &__back {

@@ -21,7 +21,7 @@
         @include md {
           width: 25.4rem;
           justify-content: space-between;
-          margin: 0 auto;
+          margin: 2rem auto;
         }
       }
     }
@@ -30,6 +30,7 @@
     display: flex;
     padding-top: 10rem;
     padding-bottom: 10rem;
+    justify-content: space-between;
     @include md {
       padding-top: 0rem;
       padding-bottom: 6rem;
@@ -44,7 +45,7 @@
       flex-flow: column;
       justify-content: space-between;
       @include lg {
-        padding: 5% 3% 2.5% 10%;
+        padding: 5% 2% 2.5% 10%;
       }
       @include md {
         padding: 0 5%;
@@ -69,8 +70,15 @@
     }
     &__img {
       width: 52%;
+      height: auto;
+      max-width: 67.6rem;
+      object-fit: cover;
+      @include lg {
+        max-width: 54.08rem;
+      }
       @include md {
         width: 100%;
+        max-width: none;
         margin-bottom: 3rem;
       }
       picture {
@@ -100,8 +108,14 @@
     }
     &__img {
       width: 43%;
+      max-width: 67.6rem;
+      object-fit: cover;
+      @include lg {
+        max-width: 54.08rem;
+      }
       @include md {
         width: 100%;
+        max-width: none;
         margin-bottom: 5rem;
       }
     }
@@ -112,6 +126,9 @@
       display: flex;
       flex-flow: column;
       justify-content: space-between;
+      @include lg {
+        padding: 8% 10% 8% 5.5%;
+      }
       @include md {
         width: 100%;
         padding: 0 5%;
@@ -230,6 +247,9 @@
         @include md {
           padding: 3rem 0;
           display: block;
+        }
+        &--align {
+          align-items: baseline;
         }
       }
       &__map {

@@ -1,27 +1,40 @@
+@use "../foundation/variables" as *;
 /* ===============================================
 # 微調整用のクラスなどを定義するファイル
   唯一 !important の使用ができる
 =============================================== */
-.f-space {
-  &__zero {
-    margin: 0 !important;
-  }
-  &__footer {
-    &__list {
-      margin-right: 2.35rem;
-    }
+
+.lg-only {
+  display: block;
+  @include md {
+    display: none;
   }
 }
-.f-gap {
-  &__footer {
-    &__list {
-      display: grid;
-      row-gap: 3rem !important;
-    }
+
+.md-only {
+  display: none;
+  @include md {
+    display: block;
+  }
+  @include sp {
+    display: none;
   }
 }
-.f-align {
-  &__baseline {
-    align-items: baseline!important;
+.md-over {
+  display: block;
+  @include sp {
+    display: none;
+  }
+}
+.sp-only {
+  display: none;
+  @include sp {
+    display: block;
+  }
+}
+.md-under {
+  display: none;
+  @include md {
+    display: block;
   }
 }

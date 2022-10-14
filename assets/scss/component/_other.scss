@@ -227,3 +227,22 @@
     white-space: nowrap;
   }
 }
+.c-tag-store {
+  display: block;
+  margin: 0 auto 2rem auto;
+  @include md {
+    margin: 0 auto 1rem auto;
+  }
+  &__text {
+    padding: 0.7rem 1.7rem;
+    background: #90DB1F;
+    border-radius: 0.3rem;
+    font-family: $YuGothic;
+    font-size: 1.6rem;
+    font-weight: $medium;
+    letter-spacing: 0.05em;
+    color: #fff;
+    display: inline-block;
+    white-space: nowrap;
+  }
+}

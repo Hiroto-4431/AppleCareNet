@@ -8,11 +8,13 @@
   padding: 3.6rem 5% 0;
   border: 0.4rem solid #cf1126;
   background: transparent;
-  z-index: -1;
+  z-index: 1000;
+  pointer-events: none;
   &.open-header {
     border: 0.4rem solid #fff;
+    pointer-events: auto;
   }
-  @include md {
+  @include lg {
     overflow-y: scroll;
     padding: 2.8rem 5% 0;
     &::-webkit-scrollbar {
@@ -20,23 +22,25 @@
     }
   }
   &__logo {
+    pointer-events: auto;
     width: 25.3rem;
+    z-index: 1000;
     @include md {
       position: relative;
-      z-index: 1000;
       width: 16rem;
     }
   }
   &__contact {
+    pointer-events: auto;
     position: absolute;
     width: 18.6rem;
     height: 8.5rem;
     background: #cf1126;
     top: 0;
     right: 0;
-    z-index: 1000;
     &.open-contact {
       background: #fff;
+      position: fixed;
       p {
         color: $red;
       }
@@ -63,7 +67,8 @@
 
 .l-hmg {
   &__btn {
-    position: absolute;
+    pointer-events: auto;
+    position: fixed;
     top: 4rem;
     right: 21.6rem;
     width: 2.63rem;
@@ -85,12 +90,14 @@
       display: block;
       width: 100%;
       height: 100%;
+      
       &--wrapper {
         display: flex;
         width: 100%;
         height: 100%;
         flex-flow: column;
         justify-content: space-between;
+        position: relative;
         @include md {
           position: absolute;
           top: 50%;
@@ -105,31 +112,42 @@
         width: 100%;
         height: 0.2rem;
         background: #000;
+        transition: all 0.5s;
+        // test
+        // position: absolute;
+        // left: 50%;
+        // transform: translateX(-50%);
+        // 
+        &:nth-of-type(1) {
+          top: 0;
+        }
         @include md {
           background: #fff;
         }
         &.open-line {
+          background: #fff;
           &:nth-of-type(1) {
+            transition: all 0.5s;
             position: absolute;
-            background: #fff;
-            top: 50%;
-            left: 50%;
             transform: translate(-50%, -50%) rotate(45deg);
             transform-origin: center center 0;
+            top: 50%;
+            left: 50%;
             @include md {
               background: $red;
             }
           }
           &:nth-of-type(2) {
+            transition: all 0.5s;
             opacity: 0;
           }
           &:nth-of-type(3) {
+            transition: all 0.5s;
             position: absolute;
-            background: #fff;
-            top: 50%;
-            left: 50%;
             transform: translate(-50%, -50%) rotate(-45deg);
             transform-origin: center center 0;
+            top: 50%;
+            left: 50%;
             @include md {
               background: $red;
             }
@@ -138,4 +156,171 @@
       }
     }
   }
+  &__content {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: -300%;
+    background: $red;
+    transition: all 0.5s;
+    @include lg {
+      flex-direction: column-reverse;
+      height: auto;
+    }
+    &.open-hmgContent {
+      top: 0;
+      transition: all 0.5s;
+      @include lg {
+        display: flex;
+      }
+    }
+  }
+  &__info {
+    width: 40%;
+    height: 100%;
+    display: block;
+    @include lg {
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__contact {
+    position: relative;
+    width: 100%;
+    height: 57.25%;
+    background: #fff;
+    @include lg {
+      height: auto;
+    }
+    &__mark {
+      position: absolute;
+      top: 12.38%;
+      right: 9%;
+      width: 12.6rem;
+      height: auto;
+      @include lg {
+        right: 0;
+      }
+    }
+    &__text {
+      position: absolute;
+
+      top: 25%;
+      left: 8%;
+      // top: 50%;
+      // left: 50%;
+      // transform: translate(-50%, -50%);
+      @include lg {
+        position: static;
+        padding: 8rem 5% 5rem;
+      }
+    }
+    &__tel {
+      display: flex;
+      align-items: center;
+      margin: 4.4rem 0 3.3rem;
+      img {
+        width: 4.5rem;
+        margin-right: 2rem;
+        @include lg {
+          margin-right: 1.2rem;
+        }
+      }
+    }
+    &__mail {
+      display: flex;
+      align-items: center;
+      img {
+        width: 4.5rem;
+        margin-right: 2rem;
+        @include lg {
+          margin-right: 1.2rem;
+        }
+      }
+    }
+  }
+  &__recruit {
+    width: 100%;
+    height: 42.75%;
+    background-image: url("../img/common/pc-hmg-recruit.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    @include lg {
+      background-image: url("../img/common/sp-hmg-recruit.png");
+      min-height: 23.1rem;
+    }
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 8.3%;
+      transform: translateY(-50%);
+      @include lg {
+        left: 5%;
+      }
+    }
+  }
+  &__detail {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    @include lg {
+      position: static;
+      width: 100%;
+      height: auto;
+      height: 110rem;
+    }
+    &__wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+      @include lg {
+        
+        width: 100%;
+        position: absolute;
+        top: 17rem;
+        transform: translate(-50%, 0);
+      }
+    }
+    &__content {
+      display: flex;
+      @include lg {
+        padding: 0 5%;
+        display: block;
+      }
+      p {
+        a {
+          display: inline!important;
+        }
+      }
+    }
+    &__list {
+      width: 100%;
+      &--display {
+        display: flex;
+      }
+      &--content {
+        display: grid;
+        row-gap: 2rem;
+        margin-right: 2.35rem;
+      }
+    }
+    &--line {
+      position: absolute;
+      right: 2.5rem;
+      bottom: 2.8rem;
+      width: 5.7rem;
+      height: 5.7rem;
+      @include lg {
+        display: none;
+      }
+    }
+  }
 }
+
+

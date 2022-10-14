@@ -1,8 +1,8 @@
 <!-- ===== サンクスページ ===== -->
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
-<main class="l-main l-aboutUs">
-  <section class="l-top">
+<main class="l-main l-thanks">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__common__main-title">お問い合わせ<br class="md-under">有難うございました。</h1>
       <p class="c-text__common__sub-title">THANK YOU.</p>

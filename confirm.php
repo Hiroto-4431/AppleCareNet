@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-confirm">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__common__main-title">お問い合わせ</h1>
       <p class="c-text__common__sub-title">CONTACT</p>
@@ -66,7 +66,7 @@
         </label>
       </div>
       <div class="l-content__form__confirm">
-        <input type="submit" value="確認する" class="l-content__form__btn">
+        <input type="submit" value="送信する" class="l-content__form__btn">
       </div>
       <div class="l-content__form__back">
         <a href="./contact.php" class="l-content__form__back-btn">修正する</a>

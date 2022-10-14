@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-news">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <div class="l-top__title">
         <h1 class="c-text__common__main-title">お知らせ</h1>
@@ -43,16 +43,21 @@
     <div class="l-content__check">
       <label for="news" class="l-content__check__cell">
         <input id="news" type="checkbox">
-        <span class="c-text__news__check">NEWS</span>
+        <span class="c-text__news__check l-content__check__cell--checkbox">NEWS</span>
       </label>
       <label for="event" class="l-content__check__cell">
         <input id="event" type="checkbox">
-        <span class="c-text__news__check">EVENT</span>
+        <span class="c-text__news__check l-content__check__cell--checkbox">EVENT</span>
       </label>
     </div>
     <div class="l-content__select">
-      <select name="" id="">
-        <option disabled selected>タグから探す</option>
+      <select name="tag" id="">
+        <option disabled>タグから探す</option>
+        <option value="1" selected>タグサンプル1</option>
+        <option value="2">タグサンプル2</option>
+        <option value="3">タグサンプル3</option>
+        <option value="4">タグサンプル4</option>
+        <option value="5">タグサンプル5</option>
       </select>
     </div>
     <div class="l-content__list">
@@ -60,17 +65,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">all</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -83,17 +88,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2022</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -106,17 +111,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2021</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -129,17 +134,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2020</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -152,17 +157,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2019</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -175,17 +180,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2018</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -198,17 +203,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2017</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>
@@ -221,17 +226,17 @@
         <li class="l-content__list__label">
           <a href="#" class="l-content__list__label--wrapper">
             <div class="l-content__list__label--date">
-              <span class="c-text__news__date">2022.03.03</span>
+              <span class="c-text__news__date">2016</span>
             </div>
             <div class="l-content__list__label--tag">
               <span class="c-tag">
                 <p class="c-tag__text">タグサンプル1</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル2</p>
               </span>
               <span class="c-tag">
-                <p class="c-tag__text">タグサンプル1</p>
+                <p class="c-tag__text">タグサンプル3</p>
               </span>
             </div>
             <div>

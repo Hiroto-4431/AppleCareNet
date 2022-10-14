@@ -17,7 +17,7 @@
               <p class="c-text__footer__contact--tel">03-3650-6284</p>
             </div>
           </a>
-          <a href="#" class="l-footer__contact__mail">
+          <a href="contact.php" class="l-footer__contact__mail">
             <img src="./assets/img/common/mail-white.png" alt="">
             <p class="c-text__footer__contact--mail">フォームでの<br class="md-under">お問い合わせはこちら</p>
           </a>
@@ -38,8 +38,8 @@
       <div class="l-footer__site__wrapper">
         <div class="l-footer__site__info">
           <div class="l-footer__site__logo">
-            <a href="#">
-              <img src="./assets/img/common/pc-footer-logo.png" alt="">
+            <a href="#top">
+              <img src="./assets/img/common/pc-footer-logo.svg" alt="">
             </a>
           </div>
           <div class="l-footer__site__address">
@@ -61,18 +61,18 @@
             <div class="l-footer__site__cell">
               <p class="c-text__footer__link--head">アップルケアネットについて</p>
               <div class="l-footer__site__cell--wrapper">
-                <a class="c-text__footer__link--list" href="#">アップルケアネットとは</a>
-                <a class="c-text__footer__link--list" href="#">社長メッセージ</a>
-                <a class="c-text__footer__link--list" href="#">企業理念</a>
-                <a class="c-text__footer__link--list" href="#">会社概要</a>
+                <a class="c-text__footer__link--list" href="aboutUs.php#aboutUs">アップルケアネットとは</a>
+                <a class="c-text__footer__link--list" href="aboutUs.php#greeting">社長メッセージ</a>
+                <a class="c-text__footer__link--list" href="aboutUs.php#corporatePhilosophy">企業理念</a>
+                <a class="c-text__footer__link--list" href="aboutUs.php##companyInfo">会社概要</a>
                 <a class="c-text__footer__link--list" href="#">アクセス</a>
               </div>
             </div>
             <div class="l-footer__site__cell">
               <p class="c-text__footer__link--head">取り組み</p>
               <div class="l-footer__site__cell--flex">
-                <div class="l-footer__site__cell--wrapper f-space__footer__list">
-                  <a class="c-text__footer__link--list" href="#">健康サポート薬局</a>
+                <div class="l-footer__site__cell--wrapper l-footer__site__cell--second-block-margin">
+                  <a class="c-text__footer__link--list" href="single-attempt.php">健康サポート薬局</a>
                   <a class="c-text__footer__link--list" href="#">イベントを実施</a>
                   <a class="c-text__footer__link--list" href="#">自宅医療実施</a>
                   <a class="c-text__footer__link--list" href="#">テキスト確認</a>
@@ -98,9 +98,9 @@
                 <a class="c-text__footer__link--list" href="#">アクセス</a>
               </div>
             </div>
-            <div class="l-footer__site__cell f-space__zero">
+            <div class="l-footer__site__cell  l-footer__site__cell--last-block-margin">
               <p class="c-text__footer__link--head">店舗情報</p>
-              <div class="l-footer__site__cell--wrapper f-gap__footer__list">
+              <div class="l-footer__site__cell--wrapper l-footer__site__cell--last-block-gap">
                 <a class="c-text__footer__link--list" href="#">店舗情報一覧</a>
                 <a class="c-text__footer__link--strong" href="#">お知らせ</a>
                 <a class="c-text__footer__link--strong" href="#">すこやか通信</a>
@@ -114,9 +114,8 @@
         <p class="c-text__footer__copyright">&copy; Apple care net.All rights reserved</p>
       </div>
       <div class="l-footer__move">
-        <a href="#">
+        <a href="#top">
           <i class="fa-solid fa-chevron-up"></i>
-
         </a>
       </div>
     </div>
@@ -133,8 +132,8 @@
 <script src="./assets/js/smoothScroll.js"></script>
 <!-- swiper js -->
 <script src="./assets/js/swiper.js"></script>
-<!-- newsTab js -->
-<script src="./assets/js/newsTab.js"></script>
+<!-- news js -->
+<script src="./assets/js/news.js"></script>
 <!-- bodyScrollLock js -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"></script>
 
