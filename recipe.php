@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-recipe">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <div class="l-top__title">
         <h1 class="c-text__common__main-title">すこやか通信</h1>

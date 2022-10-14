@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-index">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__index__main-title l-top__main-text__main">あなたを見守る、<br>“地元の薬局”を<br class="md-under">提供します。</h1>
       <p class="c-text__index__sub-title l-top__main-text__sub">LOVED BY <br class="md-under">THE COMMUNITY</p>
@@ -162,10 +162,10 @@
   <section class="l-store">
     <div class="l-store__message">
       <p class="c-text__single__title l-store__message__title">店舗情報<br class="md-under"><span class="c-text__single__sub-title l-store__message__sub-title">STORE INFORMATION</span></p>
-      <p class="c-text__single__middle-title l-store__message__middle-title">「薬」の「食」の両面から<br>地域医療を支えています。</p>
-      <p class="c-text__single__post l-store__message__post">患者さま1人1人と真摯に向き合うため、<br>
-        私たちは主に関東圏・北関東地区・東北地区に<br>
-        特化した店舗展開と<br>
+      <p class="c-text__single__middle-title l-store__message__middle-title">「薬」の「食」の両面から<br class="md-over">地域医療を支えています。</p>
+      <p class="c-text__single__post l-store__message__post">患者さま1人1人と真摯に向き合うため、<br class="md-over">
+        私たちは主に関東圏・北関東地区・東北地区に<br class="md-over">
+        特化した店舗展開と<br class="md-over">
         サービスの提供を行っています。</p>
       <div class="c-btn__detail">
         <a href="#">

@@ -173,6 +173,16 @@
         display: grid;
         row-gap: 2rem;
       }
+      &--second-block-margin {
+        margin-right: 2.35rem;
+      }
+      &--last-block-margin {
+        margin: 0;
+      }
+      &--last-block-gap {
+        display: grid;
+        row-gap: 3rem;
+      }
     }
     &__copyright {
       padding: 0 10%;

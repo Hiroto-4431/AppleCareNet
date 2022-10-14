@@ -462,6 +462,17 @@
       color: #fff;
       text-align: center;
     }
+    &__line {
+      &--name {
+        font-family: $YuGothic;
+        font-size: 2.4rem;
+        font-weight: $bold;
+        line-height: calc(71 / 24);
+        letter-spacing: 0.05em;
+        color: #fff;
+        
+      }
+    }
   }
   &__form {
     &__cell {

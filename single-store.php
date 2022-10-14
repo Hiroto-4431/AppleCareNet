@@ -2,7 +2,7 @@
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
 <main class="l-main l-single-store">
-  <section class="l-top">
+  <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__common__main-title">千駄木店</h1>
       <p class="c-text__common__sub-title l-top__main-text__sub">SENDAGI</p>
@@ -12,6 +12,20 @@
     <div class="l-content__wrapper">
       <div class="l-content__map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.853833034729!2d139.75537251551575!3d35.729813134912874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188dc5df60da21%3A0x6fced6798fa334a4!2z44Ki44OD44OX44Or5Y2D6aeE5pyo6Kq_5Ymk6Jas5bGA!5e0!3m2!1sja!2sjp!4v1664417411791!5m2!1sja!2sjp" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="l-content__tag">
+        <span class="c-tag-store">
+          <p class="c-tag-store__text">タグサンプル1</p>
+        </span>
+        <span class="c-tag-store">
+          <p class="c-tag-store__text">タグサンプル1</p>
+        </span>
+        <span class="c-tag-store">
+          <p class="c-tag-store__text">タグサンプル1</p>
+        </span>
+        <span class="c-tag-store">
+          <p class="c-tag-store__text">タグサンプル1</p>
+        </span>
       </div>
       <div class="l-content__info">
         <div class="l-content__info__store">
@@ -35,7 +49,9 @@
           <source srcset="./assets/img/common/sp-store-line-base.svg" media="(max-width: 960px)" />
           <img src="./assets/img/common/pc-store-line-base.svg" alt="">
         </picture>
-
+        <!-- QRコード -->
+        <img src="./assets/img//line/tokyo/sendagi/L_gainfriends_qr.png" alt="" class="l-content__line__qr">
+        <p class="c-text__store__line--name">千駄木店</p>
       </div>
       <div class="l-content__back">
         <a href="#">

@@ -9,45 +9,19 @@ html {
 .l-main {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+  z-index: 600;
+  pointer-events: auto;
+  &.pointer-none {
+    pointer-events: none;
+  }
+  .l-top {
+    background: transparent;
+  }
 }
 
 img {
   max-width: 100%;
   vertical-align: bottom;
   overflow: hidden;
-}
-
-.lg-only {
-  display: block;
-  @include md {
-    display: none;
-  }
-}
-
-.md-only {
-  display: none;
-  @include md {
-    display: block;
-  }
-  @include sp {
-    display: none;
-  }
-}
-.md-over {
-  display: block;
-  @include sp {
-    display: none;
-  }
-}
-.sp-only {
-  display: none;
-  @include sp {
-    display: block;
-  }
-}
-.md-under {
-  display: none;
-  @include md {
-    display: block;
-  }
 }

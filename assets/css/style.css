@@ -24,62 +24,21 @@ html {
 .l-main {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+  position: relative;
+  z-index: 600;
+  pointer-events: auto;
+}
+.l-main.pointer-none {
+  pointer-events: none;
+}
+.l-main .l-top {
+  background: transparent;
 }
 
 img {
   max-width: 100%;
   vertical-align: bottom;
   overflow: hidden;
-}
-
-.lg-only {
-  display: block;
-}
-@media only screen and (max-width: 960px) {
-  .lg-only {
-    display: none;
-  }
-}
-
-.md-only {
-  display: none;
-}
-@media only screen and (max-width: 960px) {
-  .md-only {
-    display: block;
-  }
-}
-@media only screen and (max-width: 520px) {
-  .md-only {
-    display: none;
-  }
-}
-
-.md-over {
-  display: block;
-}
-@media only screen and (max-width: 520px) {
-  .md-over {
-    display: none;
-  }
-}
-
-.sp-only {
-  display: none;
-}
-@media only screen and (max-width: 520px) {
-  .sp-only {
-    display: block;
-  }
-}
-
-.md-under {
-  display: none;
-}
-@media only screen and (max-width: 960px) {
-  .md-under {
-    display: block;
-  }
 }
 
 *,
@@ -348,20 +307,54 @@ th {
 # 微調整用のクラスなどを定義するファイル
   唯一 !important の使用ができる
 =============================================== */
-.f-space__zero {
-  margin: 0 !important;
+.lg-only {
+  display: block;
 }
-.f-space__footer__list {
-  margin-right: 2.35rem;
-}
-
-.f-gap__footer__list {
-  display: grid;
-  row-gap: 3rem !important;
+@media only screen and (max-width: 960px) {
+  .lg-only {
+    display: none;
+  }
 }
 
-.f-align__baseline {
-  align-items: baseline !important;
+.md-only {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .md-only {
+    display: block;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .md-only {
+    display: none;
+  }
+}
+
+.md-over {
+  display: block;
+}
+@media only screen and (max-width: 520px) {
+  .md-over {
+    display: none;
+  }
+}
+
+.sp-only {
+  display: none;
+}
+@media only screen and (max-width: 520px) {
+  .sp-only {
+    display: block;
+  }
+}
+
+.md-under {
+  display: none;
+}
+@media only screen and (max-width: 960px) {
+  .md-under {
+    display: block;
+  }
 }
 
 h1 {
@@ -565,7 +558,7 @@ h1 {
 }
 .c-btn__detail__text {
   display: block;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -580,7 +573,7 @@ h1 {
 }
 .c-btn__detail-white__text {
   display: block;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -590,7 +583,7 @@ h1 {
 }
 .c-btn__detail-white__text-red {
   display: block;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -617,7 +610,29 @@ h1 {
   padding: 0.7rem 1.7rem;
   background: #90DB1F;
   border-radius: 0.3rem;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #fff;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.c-tag-store {
+  display: block;
+  margin: 0 auto 2rem auto;
+}
+@media only screen and (max-width: 960px) {
+  .c-tag-store {
+    margin: 0 auto 1rem auto;
+  }
+}
+.c-tag-store__text {
+  padding: 0.7rem 1.7rem;
+  background: #90DB1F;
+  border-radius: 0.3rem;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   letter-spacing: 0.05em;
@@ -627,7 +642,7 @@ h1 {
 }
 
 .c-text__header__contact--main {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.6875;
@@ -647,7 +662,7 @@ h1 {
   white-space: nowrap;
 }
 .c-text__hmg__contact--main {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.9583333333;
@@ -669,7 +684,7 @@ h1 {
   color: #cf1126;
 }
 .c-text__hmg__recruit--main {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.9583333333;
@@ -685,7 +700,7 @@ h1 {
   color: #fff;
 }
 .c-text__hmg__date {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   color: #cf1126;
@@ -706,7 +721,7 @@ h1 {
   }
 }
 .c-text__hmg__mail {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.4444444444;
@@ -719,7 +734,7 @@ h1 {
   }
 }
 .c-text__hmg__headline {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 3.5;
@@ -727,21 +742,21 @@ h1 {
   letter-spacing: 0.01em;
 }
 .c-text__hmg__content {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   color: #fff;
   letter-spacing: 0.005em;
 }
 .c-text__hmg__content-strong {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
   letter-spacing: 0.01em;
 }
 .c-text__common__main-title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -766,7 +781,7 @@ h1 {
   white-space: nowrap;
 }
 .c-text__common__content {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   line-height: 3.5;
@@ -780,7 +795,7 @@ h1 {
   }
 }
 .c-text__common__back {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 4.375;
@@ -789,7 +804,7 @@ h1 {
   text-align: center;
 }
 .c-text__common__message {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.25;
@@ -797,7 +812,7 @@ h1 {
   text-align: center;
 }
 .c-text__common__point {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.6875;
@@ -805,14 +820,14 @@ h1 {
   text-align: left;
 }
 .c-text__common__advice {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #cf1126;
   text-align: left;
 }
 .c-text__bread__white {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1;
@@ -821,7 +836,7 @@ h1 {
   white-space: nowrap;
 }
 .c-text__bread__black {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 1;
@@ -830,7 +845,7 @@ h1 {
   white-space: nowrap;
 }
 .c-text__table__title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   letter-spacing: 0.1em;
@@ -838,7 +853,7 @@ h1 {
   color: #000;
 }
 .c-text__table__content {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 500;
   letter-spacing: 0.1em;
@@ -852,7 +867,7 @@ h1 {
   }
 }
 .c-text__index__main-title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -884,14 +899,14 @@ h1 {
   }
 }
 .c-text__index__label--title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 4rem;
   font-weight: 700;
   letter-spacing: 0.1em;
   color: #fff;
 }
 .c-text__index__label--content {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.875;
@@ -913,7 +928,7 @@ h1 {
   }
 }
 .c-text__index__news--post {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8125;
@@ -933,7 +948,7 @@ h1 {
   color: #BFBFBF;
 }
 .c-text__index__article--headline {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 4rem;
   font-weight: 700;
   line-height: 1.75;
@@ -941,7 +956,7 @@ h1 {
   color: #1B1D1E;
 }
 .c-text__index__article--title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.3rem;
   font-weight: 700;
   line-height: 3.0434782609;
@@ -949,14 +964,14 @@ h1 {
   color: #1B1D1E;
 }
 .c-text__index__article--message {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.875;
   color: #1B1D1E;
 }
 .c-text__index__article--detail {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 4.375;
@@ -972,7 +987,7 @@ h1 {
   color: #1A1A1A;
 }
 .c-text__news__check {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.5;
@@ -988,7 +1003,7 @@ h1 {
   color: #1A1A1A;
 }
 .c-text__news__post {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.875;
@@ -996,7 +1011,7 @@ h1 {
   color: #1A1A1A;
 }
 .c-text__single__title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -1008,7 +1023,7 @@ h1 {
   }
 }
 .c-text__single__title-white {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -1042,7 +1057,7 @@ h1 {
   color: #000;
 }
 .c-text__single__post {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.5;
@@ -1050,7 +1065,7 @@ h1 {
   color: #000;
 }
 .c-text__single__post-white {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.5;
@@ -1058,7 +1073,7 @@ h1 {
   color: #fff;
 }
 .c-text__store__name--main {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 2.6923076923;
@@ -1072,15 +1087,23 @@ h1 {
   color: #cf1126;
 }
 .c-text__store__detail {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 7rem;
   color: #fff;
   text-align: center;
 }
+.c-text__store__line--name {
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.9583333333;
+  letter-spacing: 0.05em;
+  color: #fff;
+}
 .c-text__form__cell--title {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.5;
@@ -1088,7 +1111,7 @@ h1 {
   color: #000;
 }
 .c-text__form__cell--content {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.5;
@@ -1104,7 +1127,7 @@ h1 {
   text-align: center;
 }
 .c-text__footer__contact--main {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.9583333333;
@@ -1127,7 +1150,7 @@ h1 {
   white-space: nowrap;
 }
 .c-text__footer__contact--date {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.2rem;
   font-weight: 500;
   color: #fff;
@@ -1148,7 +1171,7 @@ h1 {
   }
 }
 .c-text__footer__contact--mail {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 2.4444444444;
@@ -1176,7 +1199,7 @@ h1 {
   color: #fff;
 }
 .c-text__footer__link--head {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2rem;
   font-weight: 700;
   color: #000;
@@ -1184,14 +1207,14 @@ h1 {
   white-space: nowrap;
 }
 .c-text__footer__link--strong {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: #000;
   letter-spacing: 0.1em;
 }
 .c-text__footer__link--list {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 500;
   color: #bfbfbf;
@@ -1199,7 +1222,7 @@ h1 {
   white-space: nowrap;
 }
 .c-text__footer__copyright {
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
   color: #000;
@@ -1407,6 +1430,16 @@ h1 {
   display: grid;
   row-gap: 2rem;
 }
+.l-footer__site__cell--second-block-margin {
+  margin-right: 2.35rem;
+}
+.l-footer__site__cell--last-block-margin {
+  margin: 0;
+}
+.l-footer__site__cell--last-block-gap {
+  display: grid;
+  row-gap: 3rem;
+}
 .l-footer__site__copyright {
   padding: 0 10%;
   margin-bottom: 9rem;
@@ -1453,12 +1486,14 @@ h1 {
   padding: 3.6rem 5% 0;
   border: 0.4rem solid #cf1126;
   background: transparent;
-  z-index: -1;
+  z-index: 1000;
+  pointer-events: none;
 }
 .l-header.open-header {
   border: 0.4rem solid #fff;
+  pointer-events: auto;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1150px) {
   .l-header {
     overflow-y: scroll;
     padding: 2.8rem 5% 0;
@@ -1468,26 +1503,28 @@ h1 {
   }
 }
 .l-header__logo {
+  pointer-events: auto;
   width: 25.3rem;
+  z-index: 1000;
 }
 @media only screen and (max-width: 960px) {
   .l-header__logo {
     position: relative;
-    z-index: 1000;
     width: 16rem;
   }
 }
 .l-header__contact {
+  pointer-events: auto;
   position: absolute;
   width: 18.6rem;
   height: 8.5rem;
   background: #cf1126;
   top: 0;
   right: 0;
-  z-index: 1000;
 }
 .l-header__contact.open-contact {
   background: #fff;
+  position: fixed;
 }
 .l-header__contact.open-contact p {
   color: #cf1126;
@@ -1511,7 +1548,8 @@ h1 {
 }
 
 .l-hmg__btn {
-  position: absolute;
+  pointer-events: auto;
+  position: fixed;
   top: 4rem;
   right: 21.6rem;
   width: 2.63rem;
@@ -1543,6 +1581,7 @@ h1 {
   height: 100%;
   flex-flow: column;
   justify-content: space-between;
+  position: relative;
 }
 @media only screen and (max-width: 960px) {
   .l-hmg__btn__content--wrapper {
@@ -1559,19 +1598,26 @@ h1 {
   width: 100%;
   height: 0.2rem;
   background: #000;
+  transition: all 0.5s;
+}
+.l-hmg__btn__content--line:nth-of-type(1) {
+  top: 0;
 }
 @media only screen and (max-width: 960px) {
   .l-hmg__btn__content--line {
     background: #fff;
   }
 }
-.l-hmg__btn__content--line.open-line:nth-of-type(1) {
-  position: absolute;
+.l-hmg__btn__content--line.open-line {
   background: #fff;
-  top: 50%;
-  left: 50%;
+}
+.l-hmg__btn__content--line.open-line:nth-of-type(1) {
+  transition: all 0.5s;
+  position: absolute;
   transform: translate(-50%, -50%) rotate(45deg);
   transform-origin: center center 0;
+  top: 50%;
+  left: 50%;
 }
 @media only screen and (max-width: 960px) {
   .l-hmg__btn__content--line.open-line:nth-of-type(1) {
@@ -1579,19 +1625,206 @@ h1 {
   }
 }
 .l-hmg__btn__content--line.open-line:nth-of-type(2) {
+  transition: all 0.5s;
   opacity: 0;
 }
 .l-hmg__btn__content--line.open-line:nth-of-type(3) {
+  transition: all 0.5s;
   position: absolute;
-  background: #fff;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
   transform-origin: center center 0;
+  top: 50%;
+  left: 50%;
 }
 @media only screen and (max-width: 960px) {
   .l-hmg__btn__content--line.open-line:nth-of-type(3) {
     background: #cf1126;
+  }
+}
+.l-hmg__content {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: -300%;
+  background: #cf1126;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__content {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+}
+.l-hmg__content.open-hmgContent {
+  top: 0;
+  transition: all 0.5s;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__content.open-hmgContent {
+    display: flex;
+  }
+}
+.l-hmg__info {
+  width: 40%;
+  height: 100%;
+  display: block;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__info {
+    width: 100%;
+    height: auto;
+  }
+}
+.l-hmg__contact {
+  position: relative;
+  width: 100%;
+  height: 57.25%;
+  background: #fff;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__contact {
+    height: auto;
+  }
+}
+.l-hmg__contact__mark {
+  position: absolute;
+  top: 12.38%;
+  right: 9%;
+  width: 12.6rem;
+  height: auto;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__contact__mark {
+    right: 0;
+  }
+}
+.l-hmg__contact__text {
+  position: absolute;
+  top: 25%;
+  left: 8%;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__contact__text {
+    position: static;
+    padding: 8rem 5% 5rem;
+  }
+}
+.l-hmg__contact__tel {
+  display: flex;
+  align-items: center;
+  margin: 4.4rem 0 3.3rem;
+}
+.l-hmg__contact__tel img {
+  width: 4.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__contact__tel img {
+    margin-right: 1.2rem;
+  }
+}
+.l-hmg__contact__mail {
+  display: flex;
+  align-items: center;
+}
+.l-hmg__contact__mail img {
+  width: 4.5rem;
+  margin-right: 2rem;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__contact__mail img {
+    margin-right: 1.2rem;
+  }
+}
+.l-hmg__recruit {
+  width: 100%;
+  height: 42.75%;
+  background-image: url("../img/common/pc-hmg-recruit.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__recruit {
+    background-image: url("../img/common/sp-hmg-recruit.png");
+    min-height: 23.1rem;
+  }
+}
+.l-hmg__recruit__text {
+  position: absolute;
+  top: 50%;
+  left: 8.3%;
+  transform: translateY(-50%);
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__recruit__text {
+    left: 5%;
+  }
+}
+.l-hmg__detail {
+  width: 60%;
+  height: 100%;
+  position: relative;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__detail {
+    position: static;
+    width: 100%;
+    height: auto;
+    height: 110rem;
+  }
+}
+.l-hmg__detail__wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__detail__wrapper {
+    width: 100%;
+    position: absolute;
+    top: 17rem;
+    transform: translate(-50%, 0);
+  }
+}
+.l-hmg__detail__content {
+  display: flex;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__detail__content {
+    padding: 0 5%;
+    display: block;
+  }
+}
+.l-hmg__detail__content p a {
+  display: inline !important;
+}
+.l-hmg__detail__list {
+  width: 100%;
+}
+.l-hmg__detail__list--display {
+  display: flex;
+}
+.l-hmg__detail__list--content {
+  display: grid;
+  row-gap: 2rem;
+  margin-right: 2.35rem;
+}
+.l-hmg__detail--line {
+  position: absolute;
+  right: 2.5rem;
+  bottom: 2.8rem;
+  width: 5.7rem;
+  height: 5.7rem;
+}
+@media only screen and (max-width: 1150px) {
+  .l-hmg__detail--line {
+    display: none;
   }
 }
 
@@ -1605,6 +1838,7 @@ h1 {
   top: 50%;
   left: 10%;
   transform: translateY(-50%);
+  z-index: 200;
 }
 .l-index .l-top__main-text__main, .l-index .l-top__main-text__sub {
   text-align: left;
@@ -1614,7 +1848,7 @@ h1 {
   width: 59rem;
   right: 5%;
   bottom: -18.6rem;
-  z-index: -1;
+  z-index: 100;
 }
 @media only screen and (max-width: 960px) {
   .l-index .l-top__img {
@@ -1693,14 +1927,18 @@ h1 {
   }
 }
 .l-index .l-aboutUs__wrapper__btn {
-  margin: 0 auto;
+  margin: 0 auto 0 0;
+}
+@media only screen and (max-width: 960px) {
+  .l-index .l-aboutUs__wrapper__btn {
+    margin: 0 auto;
+  }
 }
 .l-index .l-aboutUs__image {
   position: absolute;
   bottom: 8rem;
   transform: translateY(50%);
   width: 100%;
-  z-index: 1200;
   height: 12rem;
   display: flex;
   overflow: hidden;
@@ -1769,7 +2007,6 @@ h1 {
 }
 .l-index .l-attempt__article {
   position: relative;
-  z-index: 500;
 }
 .l-index .l-attempt__article__img {
   width: 40rem;
@@ -1779,7 +2016,7 @@ h1 {
 .l-index .l-attempt__article .swiper {
   overflow: hidden;
   margin: 0 0 2rem auto;
-  width: calc(100% - 18rem);
+  width: 84%;
   position: relative;
 }
 @media only screen and (max-width: 960px) {
@@ -1796,7 +2033,6 @@ h1 {
 .l-index .l-attempt__article .swiper-slide {
   width: 40rem;
   position: relative;
-  z-index: 700;
 }
 .l-index .l-attempt__article .swiper-slide img {
   transition: all 0.3s;
@@ -2110,7 +2346,6 @@ h1 {
 }
 .l-index .l-recipe__article {
   position: relative;
-  z-index: 500;
 }
 .l-index .l-recipe__article__img {
   width: 27.4rem;
@@ -2121,7 +2356,7 @@ h1 {
 .l-index .l-recipe__article .swiper {
   overflow: hidden;
   margin: 0 0 2rem auto;
-  width: calc(100% - 18rem);
+  width: 84%;
   position: relative;
 }
 @media only screen and (max-width: 960px) {
@@ -2138,7 +2373,6 @@ h1 {
 .l-index .l-recipe__article .swiper-slide {
   width: 27.4rem;
   position: relative;
-  z-index: 700;
 }
 .l-index .l-recipe__article .swiper-slide img {
   transition: all 0.3s;
@@ -2229,13 +2463,14 @@ h1 {
   .l-aboutUs .l-top__content__list {
     width: 25.4rem;
     justify-content: space-between;
-    margin: 0 auto;
+    margin: 2rem auto;
   }
 }
 .l-aboutUs .l-aboutUs {
   display: flex;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 960px) {
   .l-aboutUs .l-aboutUs {
@@ -2255,7 +2490,7 @@ h1 {
 }
 @media only screen and (max-width: 1150px) {
   .l-aboutUs .l-aboutUs__message {
-    padding: 5% 3% 2.5% 10%;
+    padding: 5% 2% 2.5% 10%;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -2284,10 +2519,20 @@ h1 {
 }
 .l-aboutUs .l-aboutUs__img {
   width: 52%;
+  height: auto;
+  max-width: 67.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 1150px) {
+  .l-aboutUs .l-aboutUs__img {
+    max-width: 54.08rem;
+  }
 }
 @media only screen and (max-width: 960px) {
   .l-aboutUs .l-aboutUs__img {
     width: 100%;
+    max-width: none;
     margin-bottom: 3rem;
   }
 }
@@ -2321,10 +2566,19 @@ h1 {
 }
 .l-aboutUs .l-greeting__img {
   width: 43%;
+  max-width: 67.6rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media only screen and (max-width: 1150px) {
+  .l-aboutUs .l-greeting__img {
+    max-width: 54.08rem;
+  }
 }
 @media only screen and (max-width: 960px) {
   .l-aboutUs .l-greeting__img {
     width: 100%;
+    max-width: none;
     margin-bottom: 5rem;
   }
 }
@@ -2335,6 +2589,11 @@ h1 {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1150px) {
+  .l-aboutUs .l-greeting__message {
+    padding: 8% 10% 8% 5.5%;
+  }
 }
 @media only screen and (max-width: 960px) {
   .l-aboutUs .l-greeting__message {
@@ -2474,6 +2733,9 @@ h1 {
     display: block;
   }
 }
+.l-aboutUs .l-companyInfo__table__content--align {
+  align-items: baseline;
+}
 .l-aboutUs .l-companyInfo__table__map {
   padding-bottom: 5rem;
 }
@@ -2567,6 +2829,9 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.l-attempt .l-top__content {
+  margin-top: 5rem;
+}
 .l-attempt .l-top__content__list {
   display: flex;
   align-self: center;
@@ -2574,10 +2839,29 @@ h1 {
 }
 @media only screen and (max-width: 960px) {
   .l-attempt .l-top__content__list {
-    width: 25.4rem;
-    margin: 0 auto 4rem;
+    width: 30.5rem;
+    margin: 0 auto 2.5rem;
     vertical-align: middle;
   }
+}
+@media only screen and (max-width: 960px) {
+  .l-attempt .l-top__content__list__center {
+    display: block;
+    position: relative;
+    width: 5rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .l-attempt .l-top__content__list__center--slash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.l-attempt .l-top__content__list__text-center {
+  display: grid;
+  place-items: center;
 }
 .l-attempt .l-content {
   padding: 20rem 0 20rem;
@@ -2585,6 +2869,11 @@ h1 {
 .l-attempt .l-content__wrapper {
   position: relative;
   margin-left: 5%;
+}
+@media only screen and (max-width: 960px) {
+  .l-attempt .l-content__wrapper {
+    padding: 0 0 1px 0;
+  }
 }
 .l-attempt .l-content__wrapper__back {
   position: absolute;
@@ -2633,6 +2922,11 @@ h1 {
     padding-bottom: 3rem;
   }
 }
+@media only screen and (max-width: 960px) {
+  .l-attempt .l-content__cell__message {
+    padding: 0 5% 0 0;
+  }
+}
 
 .l-nutritionist .l-top {
   height: 100vh;
@@ -2645,6 +2939,9 @@ h1 {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.l-nutritionist .l-top__content {
+  margin-top: 5rem;
+}
 .l-nutritionist .l-top__content__list {
   display: flex;
   align-self: center;
@@ -2652,10 +2949,29 @@ h1 {
 }
 @media only screen and (max-width: 960px) {
   .l-nutritionist .l-top__content__list {
-    width: 25.4rem;
-    margin: 0 auto 4rem;
+    width: 30.5rem;
+    margin: 0 auto 2.5rem;
     vertical-align: middle;
   }
+}
+@media only screen and (max-width: 960px) {
+  .l-nutritionist .l-top__content__list__center {
+    display: block;
+    position: relative;
+    width: 5rem;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .l-nutritionist .l-top__content__list__center--slash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+.l-nutritionist .l-top__content__list__text-center {
+  display: grid;
+  place-items: center;
 }
 .l-nutritionist .l-content {
   padding: 20rem 0 20rem;
@@ -2663,6 +2979,11 @@ h1 {
 .l-nutritionist .l-content__wrapper {
   position: relative;
   margin-left: 5%;
+}
+@media only screen and (max-width: 960px) {
+  .l-nutritionist .l-content__wrapper {
+    padding: 0 0 1px 0;
+  }
 }
 .l-nutritionist .l-content__wrapper__back {
   position: absolute;
@@ -2711,6 +3032,9 @@ h1 {
     padding-bottom: 3rem;
   }
 }
+.l-nutritionist .l-content__cell__message {
+  padding: 0 5% 0 0;
+}
 
 .l-store .l-top {
   height: 100vh;
@@ -2756,7 +3080,6 @@ h1 {
   line-height: 1;
   color: rgb(180, 180, 180);
   width: 0;
-  z-index: 0;
   position: absolute;
   top: 50%;
   right: 3rem;
@@ -2798,12 +3121,17 @@ h1 {
 .l-store .l-content__card {
   width: 45%;
   max-width: 50rem;
-  border: 0.1rem solid #000;
   margin-bottom: 10rem;
 }
 @media only screen and (max-width: 960px) {
   .l-store .l-content__card {
     margin: 0 auto 10rem;
+    width: 33.5rem;
+  }
+}
+@media only screen and (max-width: 520px) {
+  .l-store .l-content__card {
+    width: 28.5rem;
   }
 }
 .l-store .l-content__card__name {
@@ -2813,11 +3141,18 @@ h1 {
   text-transform: uppercase;
 }
 .l-store .l-content__card__map {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem 0;
 }
 .l-store .l-content__card__map iframe {
   width: 100%;
   height: 20rem;
+}
+.l-store .l-content__card__tag {
+  margin: 0 auto 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 .l-store .l-content__card__link {
   width: 20rem;
@@ -2873,7 +3208,6 @@ h1 {
   line-height: 1;
   color: rgb(180, 180, 180);
   width: 0;
-  z-index: 0;
   position: absolute;
   top: 50%;
   right: 3rem;
@@ -2908,6 +3242,16 @@ h1 {
   -moz-column-gap: 5rem;
        column-gap: 5rem;
 }
+@media only screen and (max-width: 960px) {
+  .l-news .l-content__tab__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+.l-news .l-content__tab__name {
+  pointer-events: auto;
+}
 .l-news .l-content__tab__name.news__open {
   border-bottom: 0.3rem solid #1B1D1E;
 }
@@ -2920,6 +3264,39 @@ h1 {
   display: flex;
   align-items: center;
   margin: 0 5rem 0 0;
+}
+.l-news .l-content__check__cell--checkbox {
+  position: relative;
+  padding-left: 3rem;
+}
+.l-news .l-content__check__cell--checkbox::before {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  border: 1px solid #B4B4B4;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 0.3rem;
+}
+.l-news .l-content__check__cell--checkbox::after {
+  content: "";
+  position: absolute;
+  top: 1.1rem;
+  left: 0.6rem;
+  width: 0.7rem;
+  height: 1.5rem;
+  border-right: 0.2rem solid #cf1126;
+  border-bottom: 0.3rem solid #cf1126;
+  opacity: 0;
+  transform: rotate(45deg);
+}
+.l-news .l-content__check__cell input[type=checkbox] {
+  display: none;
+}
+.l-news .l-content__check__cell input[type=checkbox]:checked + .l-content__check__cell--checkbox::after {
+  opacity: 1;
 }
 .l-news .l-content__select {
   position: relative;
@@ -2939,7 +3316,6 @@ h1 {
   line-height: 1;
   color: rgb(180, 180, 180);
   width: 0;
-  z-index: 0;
   position: absolute;
   top: 50%;
   right: 3rem;
@@ -3058,7 +3434,6 @@ h1 {
   line-height: 1;
   color: rgb(180, 180, 180);
   width: 0;
-  z-index: 0;
   position: absolute;
   top: 50%;
   right: 3rem;
@@ -3122,7 +3497,6 @@ h1 {
   line-height: 1;
   color: rgb(180, 180, 180);
   width: 0;
-  z-index: 0;
   position: absolute;
   top: 50%;
   right: 4rem;
@@ -3158,7 +3532,6 @@ h1 {
   line-height: 1;
   color: rgb(180, 180, 180);
   width: 0;
-  z-index: 0;
   position: absolute;
   top: 50%;
   right: 4rem;
@@ -3449,6 +3822,13 @@ h1 {
     height: 37.3rem;
   }
 }
+.l-single-store .l-content__tag {
+  margin: 0 auto 5rem auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
 .l-single-store .l-content__info {
   margin-bottom: 5rem;
   display: flex;
@@ -3476,10 +3856,25 @@ h1 {
   width: 70.5rem;
   height: auto;
   margin: 0 auto 5rem;
+  position: relative;
 }
 @media only screen and (max-width: 960px) {
   .l-single-store .l-content__line {
     width: 33.5rem;
+  }
+}
+.l-single-store .l-content__line__qr {
+  position: absolute;
+  width: 18rem;
+  height: auto;
+  top: 5rem;
+  right: 5rem;
+}
+@media only screen and (max-width: 960px) {
+  .l-single-store .l-content__line__qr {
+    top: 18.2rem;
+    right: 50%;
+    transform: translateX(50%);
   }
 }
 .l-single-store .l-content__back {
@@ -3967,7 +4362,7 @@ h1 {
   display: block;
   margin: 0 auto;
   color: #fff;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.6666666667;
@@ -4141,7 +4536,7 @@ h1 {
   display: block;
   margin: 0 auto;
   color: #fff;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 1.6666666667;
@@ -4154,86 +4549,86 @@ h1 {
   display: block;
   margin: 0 auto;
   color: #000;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+  font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 7rem;
   text-align: center;
 }
 
-.l-aboutUs .l-top {
+.l-thanks .l-top {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
   position: relative;
 }
-.l-aboutUs .l-top__main-text {
+.l-thanks .l-top__main-text {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.l-aboutUs .l-top__content {
+.l-thanks .l-top__content {
   margin-top: 10rem;
 }
-.l-aboutUs .l-top__content__list {
+.l-thanks .l-top__content__list {
   width: 67.6rem;
   display: flex;
   align-self: center;
   justify-content: space-around;
 }
 @media only screen and (max-width: 960px) {
-  .l-aboutUs .l-top__content__list {
+  .l-thanks .l-top__content__list {
     width: 25.4rem;
     justify-content: space-between;
     margin: 0 auto;
   }
 }
-.l-aboutUs .l-content {
+.l-thanks .l-content {
   margin-top: -14.5rem;
   margin-bottom: 20rem;
 }
 @media only screen and (max-width: 960px) {
-  .l-aboutUs .l-content {
+  .l-thanks .l-content {
     margin-bottom: 12rem;
   }
 }
-.l-aboutUs .l-content__message {
+.l-thanks .l-content__message {
   margin-bottom: 5rem;
 }
 @media only screen and (max-width: 960px) {
-  .l-aboutUs .l-content__message {
+  .l-thanks .l-content__message {
     margin-bottom: 3rem;
   }
 }
-.l-aboutUs .l-content__point {
+.l-thanks .l-content__point {
   width: 99rem;
   background: #FAFAFA;
   margin: 0 auto;
   border-radius: 2.8rem;
 }
 @media only screen and (max-width: 1150px) {
-  .l-aboutUs .l-content__point {
+  .l-thanks .l-content__point {
     width: 90rem;
   }
 }
 @media only screen and (max-width: 960px) {
-  .l-aboutUs .l-content__point {
+  .l-thanks .l-content__point {
     width: 33.5rem;
   }
 }
-.l-aboutUs .l-content__point__text {
+.l-thanks .l-content__point__text {
   padding: 5rem 0;
   width: 64rem;
   margin: 0 auto;
 }
 @media only screen and (max-width: 960px) {
-  .l-aboutUs .l-content__point__text {
+  .l-thanks .l-content__point__text {
     width: 30rem;
   }
 }
-.l-aboutUs .l-content__point__text__first-point {
+.l-thanks .l-content__point__text__first-point {
   margin-bottom: 3rem;
 }
-.l-aboutUs .l-content__point__text__main-point {
+.l-thanks .l-content__point__text__main-point {
   margin-bottom: 3rem;
 }/*# sourceMappingURL=style.css.map */
