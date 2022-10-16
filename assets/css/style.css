@@ -641,6 +641,10 @@ h1 {
   white-space: nowrap;
 }
 
+@font-face {
+  font-family: "TTNorms";
+  src: url("./../font/TTNorms-Bold.woff") format("woff");
+}
 .c-text__header__contact--main {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.6rem;
@@ -711,6 +715,7 @@ h1 {
   }
 }
 .c-text__hmg__tel {
+  font-family: "TTNorms";
   font-size: 2.8rem;
   font-weight: 700;
   color: #cf1126;
@@ -760,7 +765,7 @@ h1 {
   font-size: 5rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
   text-align: center;
   white-space: nowrap;
   padding-bottom: 3rem;
@@ -786,7 +791,7 @@ h1 {
   font-weight: 700;
   line-height: 3.5;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
   text-align: center;
 }
 @media only screen and (max-width: 960px) {
@@ -808,7 +813,7 @@ h1 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 2.25;
-  color: #000;
+  color: #1B1D1E;
   text-align: center;
 }
 .c-text__common__point {
@@ -816,7 +821,7 @@ h1 {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.6875;
-  color: #000;
+  color: #1B1D1E;
   text-align: left;
 }
 .c-text__common__advice {
@@ -841,7 +846,7 @@ h1 {
   font-weight: 500;
   line-height: 1;
   letter-spacing: 0.1em;
-  color: #000;
+  color: #1B1D1E;
   white-space: nowrap;
 }
 .c-text__table__title {
@@ -850,7 +855,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 0.1em;
   line-height: 1.7222222222;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__table__content {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
@@ -858,7 +863,7 @@ h1 {
   font-weight: 500;
   letter-spacing: 0.1em;
   line-height: 1.7222222222;
-  color: #000;
+  color: #1B1D1E;
 }
 @media only screen and (max-width: 960px) {
   .c-text__table__content {
@@ -871,7 +876,7 @@ h1 {
   font-size: 6rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
   text-align: center;
   white-space: nowrap;
   padding-bottom: 3rem;
@@ -1015,7 +1020,7 @@ h1 {
   font-size: 2.6rem;
   font-weight: 700;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
 }
 @media only screen and (max-width: 960px) {
   .c-text__single__title {
@@ -1054,7 +1059,7 @@ h1 {
   font-weight: 500;
   line-height: 1.7391304348;
   letter-spacing: 0.1em;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__single__post {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
@@ -1062,7 +1067,7 @@ h1 {
   font-weight: 500;
   line-height: 2.5;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__single__post-white {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
@@ -1077,7 +1082,7 @@ h1 {
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 2.6923076923;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__store__name--sub {
   font-family: "Montserrat", sans-serif;
@@ -1108,7 +1113,7 @@ h1 {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.1em;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__form__cell--content {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
@@ -1116,14 +1121,14 @@ h1 {
   font-weight: 700;
   line-height: 2.5;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__form__privacyPolicy {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6666666667;
-  color: #000;
+  color: #1B1D1E;
   text-align: center;
 }
 .c-text__footer__contact--main {
@@ -1161,6 +1166,7 @@ h1 {
   }
 }
 .c-text__footer__contact--tel {
+  font-family: "TTNorms";
   font-size: 2.8rem;
   font-weight: 700;
   color: #fff;
@@ -1189,7 +1195,7 @@ h1 {
   font-weight: 500;
   line-height: 1.7857142857;
   letter-spacing: 0.05em;
-  color: #000;
+  color: #1B1D1E;
 }
 .c-text__footer__map {
   font-family: "Montserrat", sans-serif;
@@ -1202,7 +1208,7 @@ h1 {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 2rem;
   font-weight: 700;
-  color: #000;
+  color: #1B1D1E;
   letter-spacing: 0.1em;
   white-space: nowrap;
 }
@@ -1210,7 +1216,7 @@ h1 {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #000;
+  color: #1B1D1E;
   letter-spacing: 0.1em;
 }
 .c-text__footer__link--list {
@@ -1225,7 +1231,7 @@ h1 {
   font-family: YuGothic, "游ゴシック体", "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", "Noto Sans JP", sans-serif;
   font-size: 1.4rem;
   font-weight: 500;
-  color: #000;
+  color: #1B1D1E;
   letter-spacing: 0.005em;
 }
 
