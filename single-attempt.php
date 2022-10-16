@@ -1,7 +1,7 @@
 <!-- ===== アップルケアネットの取り組み[詳細] ===== -->
 <?php include('./header.php'); ?>
 <!-- ===== メイン ===== -->
-<main class="l-main l-single-initiative">
+<main class="l-main l-single-attempt">
   <section class="l-top" id="top">
     <div class="l-top__main-text">
       <h1 class="c-text__common__main-title">健康サポート薬局</h1>

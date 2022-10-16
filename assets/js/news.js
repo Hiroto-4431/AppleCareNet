@@ -65,13 +65,6 @@ function selectHandler() {
           for(let activeArticleLabel of activeArticleLabels) {
             console.log(activeArticleLabel.length);
           }
-
-          // for(let tag of tags) {
-          //   let tagText = tag.textContent.trim();
-          //   console.log(tag.length);
-          //   for(let article of articles) { 
-          //   }
-          // }
         }
       }
     });

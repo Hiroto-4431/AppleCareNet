@@ -106,7 +106,6 @@
           }
         }
         &--name {
-          // margin-left: 1rem;
           position: relative;
           &::before {
             content:"";
@@ -193,7 +192,6 @@
             }
           }
         }
-
       }
       &__btn {
         width: 20rem;
@@ -207,9 +205,6 @@
         font-weight: $bold;
         line-height: calc(30 / 18);
         text-align: center;
-      }
-      &__confirm {
-        
       }
     }
   }

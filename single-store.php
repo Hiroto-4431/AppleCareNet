@@ -31,7 +31,9 @@
         <div class="l-content__info__store">
           <p class="c-text__single__post">千駄木店</p>
           <p class="c-text__single__post">〒113-0022</p>
-          <p class="c-text__single__post">東京都文京区千駄木5-49-3</p>
+          <address>
+            <p class="c-text__single__post">東京都文京区千駄木5-49-3</p>
+          </address>
           <p class="c-text__single__post">TEL.（03）5685-5891 FAX.（03）5685-5892</p>
           <p class="c-text__single__post">JR田端駅よりバス5分 南北線本駒込駅より徒歩10分</p>
         </div>

@@ -43,9 +43,11 @@
             </a>
           </div>
           <div class="l-footer__site__address">
-            <p class="c-text__footer__address">〒133-0057<br>
-              東京都江戸川区西小岩5-11-25<br>
-              TEL.　03-3650-6284　FAX.　03-3672-6663</p>
+            <address>
+              <p class="c-text__footer__address">〒133-0057<br>
+                東京都江戸川区西小岩5-11-25<br>
+                TEL.　03-3650-6284　FAX.　03-3672-6663</p>
+            </address>
           </div>
           <div class="l-footer__site__map">
             <a href="#">
