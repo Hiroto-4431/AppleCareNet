@@ -130,7 +130,9 @@
               <p class="c-text__table__title">住所</p>
             </div>
             <div>
-              <p class="c-text__table__content">〒133-0057 <br class="md-under">東京都江戸川区西小岩5-11-25</p>
+              <address>
+                <p class="c-text__table__content">〒133-0057 <br class="md-under">東京都江戸川区西小岩5-11-25</p>
+              </address>
             </div>
           </div>
           <div class="l-companyInfo__table__map">
@@ -193,8 +195,10 @@
             <p class="c-text__table__title">（株）江東微生物研究所</p>
           </div>
           <div class="l-group__table__content">
-            <p class="c-text__table__content">〒133-0057 <br class="md-under">東京都江戸川区西小岩5-18-6<br>
-              TEL（03）3672-9171（代）</p>
+            <address>
+              <p class="c-text__table__content">〒133-0057 <br class="md-under">東京都江戸川区西小岩5-18-6<br>
+                TEL（03）3672-9171（代）</p>
+            </address>
           </div>
         </li>
         <li class="l-group__table__cell">
@@ -202,8 +206,10 @@
             <p class="c-text__table__title">（株）ジャルコ</p>
           </div>
           <div class="l-group__table__content">
-            <p class="c-text__table__content">〒133-0051 <br class="md-under">東京都江戸川区北小岩6-20-14<br>
-              TEL（03）3671-9565</p>
+            <address>
+              <p class="c-text__table__content">〒133-0051 <br class="md-under">東京都江戸川区北小岩6-20-14<br>
+                TEL（03）3671-9565</p>
+            </address>
           </div>
         </li>
         <li class="l-group__table__cell">
@@ -211,8 +217,10 @@
             <p class="c-text__table__title">（株）メディカル・フロンティア</p>
           </div>
           <div class="l-group__table__content">
-            <p class="c-text__table__content">〒133-0051 <br class="md-under">東京都江戸川区北小岩6-20-14<br>
-              TEL（03）5693-0461</p>
+            <address>
+              <p class="c-text__table__content">〒133-0051 <br class="md-under">東京都江戸川区北小岩6-20-14<br>
+                TEL（03）5693-0461</p>
+            </address>
           </div>
         </li>
         <li class="l-group__table__cell">
@@ -220,8 +228,10 @@
             <p class="c-text__table__title">（株）ランス</p>
           </div>
           <div class="l-group__table__content">
-            <p class="c-text__table__content">〒224-0032 <br class="md-under">神奈川県横浜市都筑区茅ヶ崎中央24-4　第6セキビル 201<br>
-              TEL（045）944-4585</p>
+            <address>
+              <p class="c-text__table__content">〒224-0032 <br class="md-under">神奈川県横浜市都筑区茅ヶ崎中央24-4　第6セキビル 201<br>
+                TEL（045）944-4585</p>
+            </address>
           </div>
         </li>
         <li class="l-group__table__cell">
@@ -229,8 +239,10 @@
             <p class="c-text__table__title">（株）ジェイバック</p>
           </div>
           <div class="l-group__table__content">
-            <p class="c-text__table__content">〒963-8026 <br class="md-under">福島県郡山市並木3-5-10<br>
-              TEL（024）990-2268</p>
+            <address>
+              <p class="c-text__table__content">〒963-8026 <br class="md-under">福島県郡山市並木3-5-10<br>
+                TEL（024）990-2268</p>
+            </address>
           </div>
         </li>
       </ul>

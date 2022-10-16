@@ -3,14 +3,12 @@
 # 微調整用のクラスなどを定義するファイル
   唯一 !important の使用ができる
 =============================================== */
-
 .lg-only {
   display: block;
   @include md {
     display: none;
   }
 }
-
 .md-only {
   display: none;
   @include md {
